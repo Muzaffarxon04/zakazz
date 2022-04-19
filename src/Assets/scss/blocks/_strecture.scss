@@ -1,0 +1,47 @@
+.stricture{
+    .sticture-wrapper{
+        padding: 50px 0 140px 0;
+    display: flex;
+}
+    .stricture__title{
+        margin: 0 auto 80px auto;
+       width: 75%;
+font-size: 24px;
+font-weight: 550;
+line-height: 34px;
+color: #242424;
+
+    }
+    .lisense{
+        text-align: center;
+    }
+}
+
+
+@include breakpoint-down(700px) {
+.lisense{
+    width: 100%;
+
+    .stricture__title{
+        width: 100%;
+        font-size: 20px;
+    }
+}
+}
+
+@include breakpoint-down(400px) {
+
+    .sticture-wrapper{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        .stricture__title{
+    font-size: 18px;
+    line-height: 26px;
+    width: 100%;
+    
+        }
+    }
+
+
+    }
