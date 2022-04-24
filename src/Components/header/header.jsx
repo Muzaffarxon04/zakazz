@@ -253,42 +253,42 @@ const Header = () => {
                       </Link>
                     </li>
                     <li className="dropdown__item">
-                      <Link href="/">
+                      <Link href="/department">
                         <a className="navbar__dropdown-link">
                           {h.sub_list_one.department}
                         </a>
                       </Link>
                       <ul className="dropdown-item__sub-dropdown">
                     <li className="sub-dropdown__item">
-                      <Link href="/">
+                      <Link href="/department/shakhrisabz">
                         <a className="sub-dropdown-link">
                           {h.footer.shakhrisabz.split(" ")[0] + cc}
                         </a>
                       </Link>
                     </li>
                     <li className="sub-dropdown__item">
-                      <Link href="/">
+                      <Link href="/department/bostonlik">
                         <a className="sub-dropdown-link">
                         {h.footer.bostonlik.split(" ")[0] + cc}
                         </a>
                       </Link>
                     </li>
                     <li className="sub-dropdown__item">
-                      <Link href="/">
+                      <Link href="/department/karshi">
                         <a className="sub-dropdown-link">
                         {h.footer.karshi.split(" ")[0] + cc}
                         </a>
                       </Link>
                     </li>
                     <li className="sub-dropdown__item">
-                      <Link href="/">
+                      <Link href="/department/samarkand">
                         <a className="sub-dropdown-link">
                         {h.footer.samarkand.split(" ")[0] + cc}
                         </a>
                       </Link>
                     </li>
                     <li className="sub-dropdown__item">
-                      <Link href="/">
+                      <Link href="/department/surkhandarya">
                         <a className="sub-dropdown-link">
                         {h.footer.surkhandarya.split(" ")[0] + cc}
                          
@@ -296,14 +296,14 @@ const Header = () => {
                       </Link>
                     </li>
                     <li className="sub-dropdown__item">
-                      <Link href="/">
+                      <Link href="/department/fergana">
                         <a className="sub-dropdown-link">
                         {h.footer.fergana.split(" ")[0] + cc}
                         </a>
                       </Link>
                     </li>
                     <li className="sub-dropdown__item">
-                      <Link href="/">
+                      <Link href="/department/angren">
                         <a className="sub-dropdown-link">
                         {h.footer.angren.split(" ")[0] + cc}
                         </a>
@@ -329,7 +329,7 @@ const Header = () => {
                   <span className="navbar_line"></span>
                 </li>
                 <li className="navbar__item">
-                  <Link href="/">
+                  <Link href="/active">
                     <a
                       className={`navbar__item-link ${
                         router.pathname == "/"
@@ -392,7 +392,7 @@ const Header = () => {
                   <Link href="/service">
                     <a
                       className={`navbar__item-link ${
-                        router.pathname == "/"
+                        router.pathname == "/service"
                           ? "navbar__item-link--active"
                           : ""
                       }`}

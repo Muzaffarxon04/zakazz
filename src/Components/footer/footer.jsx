@@ -172,25 +172,39 @@ const Footer = () => {
               <p className="branch__subtitle">{h.footer.map2}</p>
               <ul className="branch__list">
                 <li className="branch__item">
-                  <a href="">{h.footer.fergana}</a>
+                <Link href='/department/fergana'>
+                  <a>{h.footer.fergana}</a>
+                  </Link>
                 </li>
                 <li className="branch__item">
-                  <a href="">{h.footer.bostonlik}</a>
+                <Link href='/department/bostonlik'>
+                  <a>{h.footer.bostonlik}</a>
+                  </Link>
                 </li>
                 <li className="branch__item">
-                  <a href="">{h.footer.shakhrisabz}</a>
+                <Link href='/department/shakhrisabz'>
+                  <a>{h.footer.shakhrisabz}</a>
+                </Link>
                 </li>
                 <li className="branch__item">
-                  <a href="">{h.footer.karshi}</a>
+                <Link href='/department/karshi'>
+                  <a>{h.footer.karshi}</a>
+            </Link>
                 </li>
                 <li className="branch__item">
-                  <a href="">{h.footer.fergana}</a>
+                <Link href='/department/fergana'>
+                  <a>{h.footer.fergana}</a>
+                </Link>
                 </li>
                 <li className="branch__item">
-                  <a href="">{h.footer.samarkand}</a>
+                <Link href='/department/samarkand'>
+                  <a>{h.footer.samarkand}</a>
+               </Link>
                 </li>
                 <li className="branch__item">
-                  <a href="">{h.footer.surkhandarya}</a>
+                  <Link href='/department/surkhandarya'>
+                  <a>{h.footer.surkhandarya}</a>
+                  </Link>
                 </li>
               </ul>
             </div>

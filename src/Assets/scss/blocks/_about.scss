@@ -1,86 +1,76 @@
-.about-wrapper{
+  .about-wrapper {
     display: flex;
     padding: 50px 0 140px 0;
-}
+  }
 
-.about-box{
+  .about-box {
     width: 72%;
-}
+  }
 
-.about__title{
+  .about__title {
     text-align: center;
-font-size: 40px;
-font-weight: 550;
-line-height: 52px;
-margin-bottom: 20px;
-}
+    font-size: 40px;
+    font-weight: 550;
+    line-height: 52px;
+    margin-bottom: 20px;
+  }
 
+  .about__subtitle {
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 28px;
+  }
 
-.about__subtitle{
-font-size: 20px;
-font-weight: 550;
-line-height: 28px;
+  .about__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+  }
 
-}
-
-.about__text{
-font-size: 20px;
-font-weight: 400;
-line-height: 28px;
-}
-
-.about__img-wrapper{
+  .about__img-wrapper {
     padding-top: 40px;
     display: flex;
     flex-wrap: wrap;
-justify-content: space-between;
- 
-        span{
-            border-radius: 4px;
-          margin-top: 20px;
-        }
-    
-  
-}
+    justify-content: space-between;
 
-
-@include breakpoint-down(650px) {
-    .about-box{
-        width: 100%;
-            }
-
-            .about-wrapper{
-                padding-bottom: 50px;
-            }
-
-
-@include breakpoint-down(400px) {
-
- 
-
-    .about__title{
-        font-size: 18px;
+    span {
+      border-radius: 4px;
+      margin-top: 20px;
     }
-    .about__text{
+  }
+
+  @include breakpoint-down(650px) {
+    .about-box {
+      width: 100%;
+    }
+
+    .about-wrapper {
+      padding-bottom: 50px;
+    }
+
+    @include breakpoint-down(400px) {
+      .about__title {
+        font-size: 18px;
+      }
+      .about__text {
         font-size: 14px;
         line-height: 20px;
-    }
+      }
 
-    .about__subtitle{
+      .about__subtitle {
         font-size: 14px;
-    }
-    
-.about__img-wrapper{
-    padding-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
-justify-content: space-between;
- 
-        span{
-            border-radius: 8px;
-        }
-    
-  
-}
+      }
 
-}}
+      .about__img-wrapper {
+        padding-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        span {
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+

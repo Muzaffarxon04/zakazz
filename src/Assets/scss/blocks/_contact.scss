@@ -86,6 +86,10 @@ font-weight: 400;
         text-align: left;
         
     }
+    &:first-child{
+       padding-left: 0;
+        
+    }
 }
 }
 
