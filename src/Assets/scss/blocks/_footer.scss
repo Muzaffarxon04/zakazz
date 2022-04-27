@@ -89,6 +89,13 @@
   cursor: pointer;
 }
 
+.footer__social__link{
+  display: inline-block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
 .footer__social__item:nth-child(1) {
   background-image: url("../../images/facebook.svg");
   background-repeat: no-repeat;
