@@ -13,7 +13,7 @@ const About = () => {
   } = useSelector((state) => state);
 
   const { header: h } = Content[lang];
-  const { add__info: a } = Content[lang];
+  const { services: a } = Content[lang];
 
   let cc
  
@@ -39,54 +39,127 @@ const About = () => {
           <div className="servise-wrapper">
      
             <div className="servise-box">
-              <h1 className="servise__title">{h.footer.angren}</h1>
+              <h1 className="servise__title">{a.about__text1}</h1>
+              <h2 className="servise__subtitle">{a.about__text2}</h2>
               <p className="about__text">
-               {a.about.about__text1}
+              {a.about__text3}
+              </p>
+              <p className="about__text">
+              {a.about__text4}
+              </p>
+              <p className="about__text">
+              {a.about__text5}
+              </p>
+              <p className="about__text">
+              {a.about__text6}
               </p>
               <br />
               <p className="about__text">
-              {a.about.about__text2}
+              {a.about__text7}
+              </p>
+              <p className="about__text">
+              {a.about__text8}
+              </p>
+              <p className="about__text">
+              {a.about__text9}
               </p>
               <br />
               <p className="about__text">
-              {a.about.about__text3}
+              {a.about__text10}
               </p>
-              <br />
-              <h2 className="about__subtitle">{a.about.about__text4}</h2>
               <p className="about__text">
-              {a.about.about__text5}
+              {a.about__text11}
               </p>
-              <br />
               <p className="about__text">
-              {a.about.about__text6}
+              {a.about__text12}
               </p>
-              <br />
               <p className="about__text">
-              {a.about.about__text7}
+              {a.about__text13}
               </p>
               <br />
               <p className="about__text">
-              {a.about.about__text8}
+              {a.about__text14}
+              </p>
+              <p className="about__text">
+              {a.about__text15}
               </p>
               <br />
               <p className="about__text">
-              {a.about.about__text9}
+              {a.about__text16}
+              </p>
+              <p className="about__text">
+              {a.about__text17}
+              </p>
+              <p className="about__text">
+              {a.about__text18}
+              </p>
+              <p className="about__text">
+              {a.about__text19}
+              </p>
+              <br />
+              <h2 className="servise__subtitle">{a.about__text20}</h2>
+              <p className="about__text">
+              {a.about__text21}
+              </p>
+              <p className="about__text">
+              {a.about__text22}
+              </p>
+              <p className="about__text">
+              {a.about__text23}
+              </p>
+              <p className="about__text">
+              {a.about__text24}
+              </p>
+              <br />
+              <h2 className="servise__subtitle">{a.about__text25}</h2>
+
+              <p className="about__text">
+              {a.about__text26}
+              </p>
+              <p className="about__text">
+              {a.about__text27}
+              </p>
+              <p className="about__text">
+              {a.about__text28}
+              </p>
+              <p className="about__text">
+              {a.about__text29}
               </p>
               <br />
               <p className="about__text">
-              {a.about.about__text10}
+              {a.about__text30}
               </p>
               <p className="about__text">
-              {a.about.about__text11}
+              {a.about__text31}
+              </p>
+              <p className="about__text">
+              {a.about__text32}
+              </p>
+              <p className="about__text">
+              {a.about__text33}
               </p>
               <br />
-              <h2 className="about__subtitle">{a.about.about__text12}</h2>
               <p className="about__text">
-              {a.about.about__text13}
+              {a.about__text34}
+              </p>
+              <p className="about__text">
+              {a.about__text35}
+              </p>
+              <p className="about__text">
+              {a.about__text36}
               </p>
               <br />
               <p className="about__text">
-              {a.about.about__text14}
+              {a.about__text37}
+              </p>
+              <p className="about__text">
+              {a.about__text38}
+              </p>
+              <p className="about__text">
+              {a.about__text39}
+              </p>
+              <p className="about__text">
+              {a.about__text40}
               </p>
             </div>
           </div>

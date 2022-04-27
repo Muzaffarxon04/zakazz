@@ -20,7 +20,8 @@ const About = () => {
   } = useSelector((state) => state);
 
   const { header: h } = Content[lang];
-  const { add__info: a } = Content[lang];
+  const { branchs: a } = Content[lang];
+
 
   let cc
  
@@ -50,54 +51,42 @@ const About = () => {
           <div className="about-wrapper">
             <Sidebar />
             <div className="about-box">
-              <h1 className="about__title">{h.footer.shakhrisabz}</h1>
+              <h1 className="servise__title">{h.footer.shakhrisabz}</h1>
               <p className="about__text">
-               {a.about.about__text1}
+               {a.shakhrisabz.about__text1}
               </p>
               <br />
               <p className="about__text">
-              {a.about.about__text2}
+              {a.shakhrisabz.about__text2}
               </p>
               <br />
               <p className="about__text">
-              {a.about.about__text3}
-              </p>
-              <br />
-              <h2 className="about__subtitle">{a.about.about__text4}</h2>
-              <p className="about__text">
-              {a.about.about__text5}
+              {a.shakhrisabz.about__text3}
               </p>
               <br />
               <p className="about__text">
-              {a.about.about__text6}
+              {a.shakhrisabz.about__text4}
               </p>
               <br />
               <p className="about__text">
-              {a.about.about__text7}
+              {a.shakhrisabz.about__text5}
               </p>
               <br />
               <p className="about__text">
-              {a.about.about__text8}
+              {a.shakhrisabz.about__text6}
               </p>
               <br />
               <p className="about__text">
-              {a.about.about__text9}
-              </p>
-              <br />
-              <p className="about__text">
-              {a.about.about__text10}
+              {a.angren.about__text6}
               </p>
               <p className="about__text">
-              {a.about.about__text11}
+              {a.shakhrisabz.about__text7}
               </p>
-              <br />
-              <h2 className="about__subtitle">{a.about.about__text12}</h2>
               <p className="about__text">
-              {a.about.about__text13}
+              {a.shakhrisabz.about__text8}
               </p>
-              <br />
               <p className="about__text">
-              {a.about.about__text14}
+              {a.shakhrisabz.about__text9}
               </p>
 
               <div className="about__img-wrapper">

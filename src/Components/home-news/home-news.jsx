@@ -92,7 +92,7 @@ function HomeNews() {
 
           <div className="home__news__box">
             <div className="home__news__big-new-box">
-              <Link href={"/" + data[0].id}>
+              <Link href={"news/" + data[0].id}>
                 <a>
                   <div>
                     <Image src={img1} alt="" width={790} height={500} className="rasm"/>
@@ -118,7 +118,7 @@ function HomeNews() {
                 {data &&
                   data.slice(1, 5).map((e, i) => (
                     <li className="home__news__news-item" key={i}>
-                      <Link href={"/" + e.id}>
+                      <Link href={"news/" + e.id}>
                         <a>
                           <div className="home__news__news-img">
                             <Image src={img2} alt="" width={120} height={110} className="home__news__news-image"/>

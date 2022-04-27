@@ -8,23 +8,31 @@
 }
 
 .servise__title {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 550;
-  line-height: 52px;
-  margin-bottom: 20px;
+  margin: 0 auto;
+font-size: 24px;
+font-weight: 550;
+line-height: 34px;
+text-align: center;
+width: 80%;
+margin-bottom: 40px;
+text-transform: uppercase;
 }
 
-.about__subtitle {
-  font-size: 20px;
+.servise__subtitle {
+  font-size: 22px;
   font-weight: 550;
   line-height: 28px;
+  margin-bottom: 20px;
+  text-align: center;
 }
+
+
 
 .about__text {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
+  opacity: 80%;
 }
 
 .about__img-wrapper {
@@ -57,7 +65,8 @@
       line-height: 20px;
     }
 
-    .about__subtitle {
+    .servise__subtitle {
+      margin-bottom: 15px;
       font-size: 14px;
     }
   }
