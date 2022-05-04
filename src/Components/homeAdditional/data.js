@@ -1,2 +1,2 @@
 
-export const add_info = [1450, 1450, 1450,1450]
+export const add_info = [1520, 1520, 1520,1520]

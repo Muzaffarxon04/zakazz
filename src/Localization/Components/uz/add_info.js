@@ -1,8 +1,8 @@
 const add__info = {
-   landslides: "Ko'chkilar",
-   funnels: "Tutun  trubinas",
-   collapses: "Qulab tushadi",
-   avalanche: "Qor ko'chkisi",
+   title:"2022 YILDA XAVFLI EKZOGEN GEOLOGIK JARAYONLARNING KO'RSATIShLARI.",
+   landslides: "SUFFOZIYONLARNI G'ORLASH",
+   collapses: "KAVIT JARAYONLARI",
+   avalanche: "KO‘CHKISH JARAYONLARI",
    about:{
       about__text1: "Fotosuratlar: Tarixiy, kundalik faoliyat va xalqaro hamkorlik (uchrashuvlar) Tarix",
       about__text2:"O‘zbekiston Respublikasi Xavfli geologik jarayonlar monitoringi davlat xizmati (keyingi o‘rinlarda Davlat monitoring xizmati deb yuritiladi) aholi va xo‘jalik obyektlarini xavfli ekzogen geologik jarayonlar rivojlanishidan aniqlash va o‘z vaqtida ogohlantirish bo‘yicha faoliyatni amalga oshiruvchi yagona tashkilotdir.",

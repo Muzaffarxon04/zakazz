@@ -125,7 +125,7 @@ function HomeNews() {
                           </div>
 
                           <div className="home__news__news-item__content">
-                            <p>{normalizeDate(data[0].time)}</p>
+                            <time>{normalizeDate(data[0].time)}</time>
                             <h3 className="">{data[0].title}</h3>
                           </div>
                         </a>

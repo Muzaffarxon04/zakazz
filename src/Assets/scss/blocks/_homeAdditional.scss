@@ -3,8 +3,19 @@
    margin-bottom: 190px;   
 }
 .home__additional .container {
-   padding: 84px 20px;
+   padding: 60px 20px 70px;
 }
+
+.additional__title{
+font-size: 40px;
+font-weight: 500;
+line-height: 50px;
+color: #FFFFFF;
+width: 85%;
+margin: 0 auto 40px auto;
+text-align: center;
+}
+
 .additional__list {
    position: relative;
    display: flex;
@@ -15,44 +26,38 @@
    padding: 0;
 }
 .additional__item {
-   width: 200px;
+   width: 30%;
 background-size: 70%;
    background-repeat: no-repeat;
+
+
 }
 .additional__item:nth-child(1) {
-   background-image: url('../../images/landslides.png');
-   
-}
-.additional__item:nth-child(2) {
-   background-image: url('../../images/funnels.png');
-   
-   
-}
-.additional__item:nth-child(3) {
    background-image: url('../../images/collapses.png');
    
 }
-.additional__item:nth-child(4) {
-   background-image: url('../../images/avalanche.png');
-   ;
+.additional__item:nth-child(2) {
+   background-image: url('../../images/landslides.png');
 }
+.additional__item:nth-child(3) {
+   background-image: url('../../images/avalanche.png');
+   
+}
+
 .addition__item__info {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   padding-top: 155px;
+   padding-top: 175px;
 }
 .count {
-   display: inline-block;
-   margin-bottom: 4px;
+   margin-left: 110px;
 }
 .count,
 .discription {
-   font-style: normal;
-   font-weight: 400;
-   font-size: 32px;
-   line-height: 38px;
-   text-align: center;
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 28px;
    color: #FFFFFF;
 }
 

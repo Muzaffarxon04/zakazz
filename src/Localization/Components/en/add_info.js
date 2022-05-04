@@ -1,8 +1,8 @@
 const add__info = {
-   landslides: "Landslides",
-   funnels: "Funnels",
-   collapses: "Collapses",
-   avalanche: "Avalanche",
+   title:"MANIFESTATIONS OF HAZARDOUS EXOGENOUS GEOLOGICAL PROCESSES IN 2022",
+   landslides: "SUFFOSION CAVELING",
+   collapses: "CAVITY PROCESSES",
+   avalanche: "LANDSLIDE PROCESSES",
    about:{
       about__text1: "Photos: Historical, daily activities, and international cooperation (meetings) History",
       about__text2:"The State Service of the Republic of Uzbekistan for monitoring dangerous geological processes (hereinafter referred to as the State Monitoring Service) is a unique organization that carries out activities to identify and timely warn the population and economic facilities from the development of hazardous exogenous geological processes.",
