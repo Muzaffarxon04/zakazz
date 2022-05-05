@@ -528,6 +528,7 @@
     .swiper-cube .swiper-slide-active,
     .swiper-cube .swiper-slide-active .swiper-slide-active {
         pointer-events: auto;
+
     }
     .swiper-cube .swiper-slide-active,
     .swiper-cube .swiper-slide-next,
@@ -649,15 +650,12 @@
 }
 
 .modal__item {
-    position: fixed;
-    left: 10%; 
-    top: 50px; 
     display: block;
     width: 80vw;
     height: 100%;
     max-width: 1200px;
     align-items: center;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .modal__show {

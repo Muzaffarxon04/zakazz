@@ -364,7 +364,8 @@ input::placeholder {
   position: absolute;
   top: 100%;
   display: none;
-  width: 196px;
+  width: 210px;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -403,7 +404,7 @@ input::placeholder {
 }
 .dropdown-item__sub-dropdown {
   width: 196px;
-  left: 195px;
+  left: 210px;
   top: 190px;
   display: none;
   background-color: #ffffff;

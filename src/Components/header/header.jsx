@@ -329,7 +329,7 @@ const Header = () => {
                   <span className="navbar_line"></span>
                 </li>
                 <li className="navbar__item">
-                  <Link href="/active">
+                  {/* <Link href="/active"> */}
                     <a
                       className={`navbar__item-link ${
                         router.pathname == "/"
@@ -339,7 +339,7 @@ const Header = () => {
                     >
                       {h.active}
                     </a>
-                  </Link>
+                  {/* </Link> */}
                   <div className="item__row">
                     <Image
                       src={Arrow}

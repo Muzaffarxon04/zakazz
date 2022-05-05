@@ -40,7 +40,8 @@ function Modal({ modal, setModal }) {
 
     return (
         <>
-            <div className={modal[0] ? 'modal modal__show' : 'modal'}>
+            <div className={modal[0] ? 'modal modal__show' : 'modal'} onClick={() => setModal([false])}>
+            
                 <div className="modal__item ">
                     <Swiper
                         className="modal__slider"

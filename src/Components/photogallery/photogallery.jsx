@@ -97,7 +97,7 @@ function Photogallery() {
                       alt={e.title}
                       width={435}
                       height={320}
-                    />
+                      onClick={() => setModal([false, i])}/>
                   </div>
                   <h3 className="photogallery__slider__title">{e.title}</h3>
                 </SwiperSlide>
@@ -123,6 +123,7 @@ function Photogallery() {
         </div>
 
         <Modal setModal={setModal} modal={modal} />
+        
       </section>
     </>
   );
