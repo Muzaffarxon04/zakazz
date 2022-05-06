@@ -168,7 +168,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="footer__branch">
-              <h4 className="branch__title">{h.footer.map}</h4>
+              <h4 className="branch__title" style={h.footer.map == "СХЕМАТИЧЕСКАЯ КАРТА" ? {paddingLeft:"35px"} : {paddingLeft:"56px"}}>{h.footer.map}</h4>
               <p className="branch__subtitle">{h.footer.map2}</p>
               <ul className="branch__list">
                 <li className="branch__item">

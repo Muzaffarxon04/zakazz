@@ -91,7 +91,7 @@ const Header = () => {
             <li className="blinders-menu__item">{h.for_blinders_list.view}</li>
             <li className="blinders-menu__item">
               <button className="blinders-menu__btn" id="light-btn"  onClick={() => {document.body.classList.remove("dark") }}>A</button>
-              <button className="blinders-menu__btn" id="dark-btn" onClick={() => {document.body.classList.add("dark") && document.body.header.classList.add("dark")}}>A</button>
+              <button className="blinders-menu__btn" id="dark-btn" onClick={() => {document.body.classList.add("dark") }}>A</button>
             </li>
             <li className="blinders-menu__item">{h.for_blinders_list.font_size}</li>
             <li className="blinders-menu__item">
@@ -239,14 +239,14 @@ const Header = () => {
                       </Link>
                     </li>
                     <li className="dropdown__item">
-                      <Link href="/">
+                      <Link href="/management">
                         <a className="navbar__dropdown-link">
                           {h.sub_list_one.management}
                         </a>
                       </Link>
                     </li>
                     <li className="dropdown__item">
-                      <Link href="/">
+                      <Link href="/open_data">
                         <a className="navbar__dropdown-link">
                           {h.sub_list_one.open_data}
                         </a>

@@ -57,6 +57,11 @@
 }
 .hamburger {
   display: none;
+  .hamburger-react{
+    *{
+      background-color: black !important;
+    }
+  }
 }
 
 .work__time {
@@ -414,6 +419,56 @@ input::placeholder {
   padding-bottom: 22px;
 }
 
+
+//_________________________------------------//
+
+.dark {
+  background-color: rgb(36, 36, 36);
+  color: #ffffff !important;
+
+  .navbar-item__dropdown,
+  .blinders-menu, .sidebar {
+    * {
+      color: #242424 !important;
+    }
+  }
+.footer__contact{
+*{
+  color: #25689e !important;
+}
+}
+  * {
+    color: #ffffff !important;
+  }
+  .blinders-menu {
+    button {
+      color: #ffffff !important;
+    }
+  }
+  .slider__box {
+    button {
+      a {
+        color: #25689e !important;
+      }
+    }
+  }
+
+  .photogallery {
+    .swiper-wrapper {
+      .swiper-slide {
+        * {
+          color: #242424 !important;
+        }
+      }
+    }
+  }
+}
+
+
+
+//_________________________------------------//
+
+
 @include breakpoint-down(1250px) {
   .work__time {
     margin-right: 20px;
@@ -509,7 +564,7 @@ height: 100px;
     position: fixed;
     height: 100%;
     overflow-y: scroll;
-    // background-color: #25689e;
+    background-color: #25689e;
     .hamburget-wrapper{
       flex-direction: column;
     }
@@ -616,13 +671,12 @@ height: 100px;
       }
 
       .header__heading {
-        width: 100%;
+        width: 65%;
         display: block;
         font-weight: 550;
         font-size: 12px;
         line-height: 18px;
         margin: 0;
-        width: 50%;
         color: #242424;
       }
     }
@@ -667,8 +721,10 @@ height: 100px;
 .header{
    height: 260px;
 }
+.header__heading {
+  width: 85% !important;
 }
-
+}
 @include breakpoint-down(230px) {
    .header{
       height: 275px;

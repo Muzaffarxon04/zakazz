@@ -96,7 +96,7 @@ console.log(a.about__info);
                 <span>
                   <Image
                     src={img1}
-                    alt=""
+                    alt="colectiv"
                     width={455}
                     height={300}
                     className="images"
@@ -105,7 +105,7 @@ console.log(a.about__info);
                 <span>
                   <Image
                     src={img2}
-                    alt=""
+                    alt="colectiv"
                     width={455}
                     height={300}
                     className="images"
@@ -114,7 +114,7 @@ console.log(a.about__info);
                 <span>
                   <Image
                     src={img3}
-                    alt=""
+                    alt="colectiv"
                     width={455}
                     height={300}
                     className="images"
@@ -123,7 +123,7 @@ console.log(a.about__info);
                 <span>
                   <Image
                     src={img4}
-                    alt=""
+                    alt="img"
                     width={455}
                     height={300}
                     className="images"
@@ -132,7 +132,7 @@ console.log(a.about__info);
                 <span>
                   <Image
                     src={img5}
-                    alt=""
+                    alt="img"
                     width={455}
                     height={300}
                     className="images"
@@ -141,7 +141,7 @@ console.log(a.about__info);
                 <span>
                   <Image
                     src={img6}
-                    alt=""
+                    alt="img"
                     width={455}
                     height={300}
                     className="images"

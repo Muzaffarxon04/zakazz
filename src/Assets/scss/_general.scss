@@ -44,14 +44,14 @@ ul {
 
 body {
   height: 100%;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
   font-size: 26px;
   line-height: 1.5;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
   color: #242424;
-  
 }
 
 img {
@@ -65,7 +65,3 @@ main {
   flex-grow: 1;
 }
 
-.dark{
-  background-color: rgb(36,36,36);
-  color: #ffffff;
-}
