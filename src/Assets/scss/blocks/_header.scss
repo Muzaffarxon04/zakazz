@@ -59,7 +59,7 @@
   display: none;
   .hamburger-react{
     *{
-      background-color: black !important;
+      background-color: #ffffff !important;
     }
   }
 }
@@ -421,13 +421,19 @@ input::placeholder {
 
 
 //_________________________------------------//
+// .management__item{
+  
+// }
 
 .dark {
   background-color: rgb(36, 36, 36);
   color: #ffffff !important;
 
   .navbar-item__dropdown,
-  .blinders-menu, .sidebar {
+  .blinders-menu, .sidebar, .management__item {
+    .management-btn{
+      color: #ffffff !important;
+      }
     * {
       color: #242424 !important;
     }
@@ -628,6 +634,14 @@ height: 100px;
     background-color: #ffffff;
   }
 
+  .hamburger {
+    .hamburger-react{
+      *{
+        background-color: black !important;
+      }
+    }
+  }
+
   .header-wrapper {
     background-color: #ffffff;
     .container {
@@ -688,6 +702,13 @@ height: 100px;
 
     background-color: #25689e;
 
+    .hamburger {
+      .hamburger-react{
+        *{
+          background-color: #ffffff !important;
+        }
+      }
+    }
     .container {
       flex-direction: column;
  
@@ -716,7 +737,11 @@ height: 100px;
   }
 }
 
-
+@include breakpoint-down(470px) {
+  .header__top{
+flex-direction: column;  
+}
+}
 @include breakpoint-down(320px) {
 .header{
    height: 260px;
