@@ -19,7 +19,7 @@ text-align: center;
 .additional__list {
    position: relative;
    display: flex;
-   align-items: center;   
+   align-items: center;  
    margin: 0;
    padding: 0;
 }
@@ -70,22 +70,142 @@ background-position: 0 29px;
 
 }
 
+@include breakpoint-down(1116px){
+.addition__item__info{
+   .discription{
+font-size: 20px;
+   }
+   .count{
+font-size: 20px;
+      margin-left: 0 !important;
+   }
+}
+}
+
+@include breakpoint-down(900px){
+   .additional__title{
+ font-size: 30px;
+ font-weight: 550;
+ line-height: 35px;
+ 
+   }
+ 
+   .additional__list{
+    padding: 60px 0 0 0;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    align-items: center;
+ 
+    .additional__item{
+       margin: 0;
+        width: 80%;
+        margin-bottom: 42px;
+        .addition__item__info{
+ margin-top: 320px;
+          flex-direction: row;
+           justify-content: flex-start;
+     align-items: center;
+         }
+        span{
+          font-weight: 550;
+          line-height: 16px; 
+          margin: 0 5px 0 0;  
+        }
+ 
+    }
+  
+ 
+ }
+ }
+
+@include breakpoint-down(750px){
+   .additional__title{
+ font-size: 25px;
+ font-weight: 550;
+ line-height: 30px;
+ text-align: center;
+ 
+   }
+ 
+   .additional__list{
+    padding: 60px 0 0 0;
+   
+ 
+    .additional__item{
+       margin: 0;
+        width: 80%;
+        margin-bottom: 42px;
+        .addition__item__info{
+ margin-top: 320px;
+         
+     
+         }
+        span{
+          font-weight: 550;
+          line-height: 16px; 
+          margin: 0 5px 0 0;  
+        }
+ 
+    }
+  
+ 
+ }
+ }
 
 @include breakpoint-down(550px){
-   .count,
-   .discription {
-  font-size: 24px;
-   }
+  .additional__title{
+font-size: 19px;
+font-weight: 550;
+line-height: 20px;
+
+  }
 
   .additional__list{
    padding: 60px 0 0 0;
-   flex-wrap: wrap;
 
    .additional__item{
-       width: 40%;
-       margin-bottom: 80px;
+      margin: 0;
+       width: 80%;
+       .addition__item__info{
+margin-top: 220px;
+       
+       }
+       span{
+         font-size: 17px;
+         font-weight: 550;
+         line-height: 16px; 
+         margin: 0 5px 0 0;  
+       }
+
    }
  
 
 }
 }
+
+
+@include breakpoint-down(400px){
+   .additional__title{
+ font-size: 14px;
+ font-weight: 550;
+ 
+   }
+   .additional__list{
+ 
+    .additional__item{
+        width: 80%;
+        .addition__item__info{
+ margin-top: 175px;
+        }
+        span{
+          font-size: 14px;
+          font-weight: 550;
+          line-height: 16px; 
+          margin: 0 5px 0 0;  
+        }
+ 
+    }
+  
+ 
+ }
+ }
