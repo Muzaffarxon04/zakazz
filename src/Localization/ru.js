@@ -7,8 +7,9 @@ import add__info from "./Components/ru/add_info";
 import contact from "./Components/ru/contact";
 import branchs from "./Components/ru/branchs";
 import services from "./Components/ru/services";
+import management from "./Components/ru/management";
 
 
-const ru = { header, photogallery, links, homeNews, home_about, add__info, contact, branchs, services};
+const ru = { header, photogallery, links, homeNews, home_about, add__info, contact, branchs, services, management};
 
 export default ru;

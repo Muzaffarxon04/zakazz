@@ -3,7 +3,7 @@ const management = {
   comunication_data: "Аloqa maʼlumotlari:",
   fax: "Faks :",
   phone: "Telefon :",
-  email: "Е-mail :",
+  email: "Е-mail:",
   reception_days: "Qabul kunlari :",
       title: `Asosiy vazifalar:`,
     title2: `Mehnat faoliyati`,
@@ -13,7 +13,7 @@ const management = {
     phone: `(+99871) 241-54-70`,
     email: `Priyomnayagss@gosslujba.uz`,
     email2: `gssogp@exat.uz`,
-    open_days:`s Dushanba, chorshanba, Juma  09:00 – 12:00`,
+    open_days:`Dushanba, chorshanba, Juma  09:00 – 12:00`,
     data: `1991 yil 25 mayda Qo’shrabot tumanida tug'ilgan. Мaʼlumoti: oliy (magistr). 2015 y. Abu Rayxon Beruniy nomli Toshkent Davlat Texnika Universiteti (bakalavr); 2018 y. Abu Rayxon Beruniy nomli Toshkent Davlat Texnika Universiteti (magistr) ni tamomlagan`,
     data2: `Davlat kuzatish xizmati faoliyatiga rahbarlik qiladi va Davlat kuzatish xizmatiga yuklangan vazifalar va funktsiyalar bajarilishi uchun shaxsan javob beradi;
     oʼz oʼrinbosarlarining vakolatlarini belgilaydi, ular oʼrtasida vazifalarni taqsimlaydi, Davlat kuzatish xizmatining davlat inspektori, hududiy stantsiyalari va yordamchi boʼlinmalarining vakolatlarini belgilaydi;
@@ -65,7 +65,7 @@ xizmati boshligʼi`
     phone: `(+99871) 241-54-70`,
     email: `Priyomnayagss@gosslujba.uz`,
     email2: `gssogp@exat.uz`,
-    open_days:` Seshanba, Payshanba, Juma  09:00 – 16:00`,
+    open_days:`Seshanba, Payshanba, Juma  09:00 – 16:00`,
     data: `1991 yil 25 mayda Qo’shrabot tumanida tug'ilgan. Мaʼlumoti: oliy (magistr). 2015 y. Abu Rayxon Beruniy nomli Toshkent Davlat Texnika Universiteti (bakalavr); 2018 y. Abu Rayxon Beruniy nomli Toshkent Davlat Texnika Universiteti (magistr) ni tamomlagan`,
     data2: `Xavfli geologik jarayonlar kuchayishi mumkin boʼlgan joylarda aholini boshqa joyga koʼchirish (muayyan joydan vaqtinchalik koʼchirish), obʼektlar qurish va ulardan foydalanish tartibini boshqa muddatga koʼchirish yoki oʼzgartirish, shuningdek, boshqa ishlarni amalga oshirish toʼgʼrisida yozma koʼrsatmalar berish.
 `,

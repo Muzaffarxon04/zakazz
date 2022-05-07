@@ -21,7 +21,7 @@ const About = () => {
 
   const { header: h } = Content[lang];
   const { add__info: a } = Content[lang];
-console.log(a.about__info);
+
   return (
     <>
       <section className="about">

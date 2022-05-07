@@ -7,8 +7,9 @@ import add__info from "./Components/uz/add_info";
 import contact from "./Components/uz/contact";
 import branchs from "./Components/uz/branchs";
 import services from "./Components/uz/services";
+import management from "./Components/uz/management";
 
 
-const uz = { header, photogallery, links, homeNews, home_about, add__info, contact, branchs, services };
+const uz = { header, photogallery, links, homeNews, home_about, add__info, contact, branchs, services, management };
 
 export default uz;

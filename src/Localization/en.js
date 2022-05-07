@@ -7,8 +7,9 @@ import add__info from "./Components/en/add_info";
 import contact from "./Components/en/contact";
 import branchs from "./Components/en/branchs";
 import services from "./Components/en/services";
+import management from "./Components/en/management";
 
 
-const en = { header, photogallery, links, homeNews, home_about, add__info, contact, branchs, services };
+const en = { header, photogallery, links, homeNews, home_about, add__info, contact, branchs, services, management };
 
 export default en;
