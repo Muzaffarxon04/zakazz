@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import normalizeDate from "../../utils/time";
 
 
-import img2 from "../../Assets/images/news2.png";
+import img2 from "../../Assets/images/logo.svg";
 
 let arrov = '>'
 
@@ -197,7 +197,7 @@ function News() {
                         <a>
                     <div className="news__news-img">
                      <span>
-                     <Image src={img2} alt="" width={120} height={110} />
+                     <Image src={img2} alt="image" width={120} height={110} />
                      </span>
                     </div>
                     <div className="news__news-content">

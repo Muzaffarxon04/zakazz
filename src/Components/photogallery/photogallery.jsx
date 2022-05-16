@@ -91,15 +91,15 @@ function Photogallery() {
             {data &&
               data.map((e, i) => (
                 <SwiperSlide key={i} onClick={() => setModal([true, i])}>
-                  <div className="photogallery__slider__img">
+                  <div className="photogallery__slider__img" >
                     <Image
                       src={SmallPhoto}
                       alt={e.title}
                       width={435}
                       height={320}
-                      onClick={() => setModal([false, i])}/>
+                      />
                   </div>
-                  <h3 className="photogallery__slider__title">{e.title}</h3>
+                  <h3 className="photogallery__slider__title" >{e.title}</h3>
                 </SwiperSlide>
               ))}
           </Swiper>

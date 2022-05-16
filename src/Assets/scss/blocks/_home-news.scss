@@ -153,7 +153,9 @@ transform: rotate(180deg);line-height: 1.5;
 .home__news__news-img{
 width: 120px;
 border-radius: 4px;
-
+*{
+object-fit: cover;
+}
 }
 
 

@@ -195,6 +195,7 @@ input::placeholder {
   align-items: center;
   margin: 0;
   padding: 0;
+  // min-width: 240px;
 }
 .lang__item {
   position: relative;
@@ -205,6 +206,7 @@ input::placeholder {
   line-height: 16px;
   color: #ffffff;
   cursor: pointer;
+  
 }
 
 .under_line {
@@ -278,6 +280,7 @@ input::placeholder {
 .navbar__item {
   position: relative;
   padding: 5px 0;
+  
 }
 .navbar__item + .navbar__item {
   margin-left: 20px;
@@ -378,11 +381,35 @@ input::placeholder {
   box-shadow: 2px 10px 20px rgba(51, 104, 179, 0.25);
   border-radius: 4px;
   padding-bottom: 40px;
+padding-right: 20px;
 }
 .navbar__item:nth-child(2):hover .navbar-item__dropdown,
 .navbar__item:nth-child(4):hover .navbar-item__dropdown {
   display: block;
+  
 }
+
+// .dropdown__item:nth-child(6){
+//   position: relative;
+// //   &::after{
+// //     display: none;
+// //     transform: rotate(90deg);
+// //     background: url("../../images/arrov.svg") no-repeat center;
+// //     right: 0;
+// //     top: 25%;
+// //   content: "^";
+// //   color: blue;
+// // position: absolute;
+// // width: 10px;
+// // height: 10px;
+// // }
+// // &:hover{
+// //   &::after{
+// //     display: block;
+// //   }
+// // }
+// }
+
 .navbar__dropdown-link,
 .sub-dropdown-link {
   width: 100%;
@@ -399,8 +426,14 @@ input::placeholder {
   }
 }
 .navbar__dropdown-link {
+position: relative;
+padding-right: 30px;
+  
   &:hover {
     font-weight: 510;
+&::before{
+  display: block;
+}
   }
 }
 

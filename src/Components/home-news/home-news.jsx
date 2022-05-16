@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import normalizeDate from "../../utils/time";
 
 import img1 from "../../Assets/images/news1.png";
-import img2 from "../../Assets/images/news2.png";
+import img2 from "../../Assets/images/logo.svg";
 import Arrow from "../../Assets/images/row.svg";
 
 const arr = [

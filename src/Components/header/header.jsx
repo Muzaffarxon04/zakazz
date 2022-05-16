@@ -9,7 +9,7 @@ import Hamburger from "hamburger-react";
 import Logo from "../../Assets/images/logo.svg";
 import Flag from "../../Assets/images/flag.svg";
 import Arrow from "../../Assets/images/row.svg";
-import See from "../../Assets/images/see.svg";
+// import See from "../../Assets/images/see.svg";
 
 const Header = () => {
   const router = useRouter();
@@ -218,7 +218,7 @@ const Header = () => {
                   </div>
                   <ul className="navbar-item__dropdown">
                     <li className="dropdown__item">
-                      <Link href="/news">
+                      <Link href="/legal_status ">
                         <a className="navbar__dropdown-link">
                           {h.sub_list_one.legal_status}
                         </a>

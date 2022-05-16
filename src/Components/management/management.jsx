@@ -27,7 +27,7 @@ const About = () => {
 
   const { header: h } = Content[lang];
   const { management: m } = Content[lang];
-console.log(m);
+
   return (
     <>
       <section className="management">

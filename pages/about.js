@@ -5,7 +5,7 @@ import About from "../src/Components/about/about";
 ;
 
 
-export default function Home() {
+export default function Aboutf() {
 	return (
 		<>
 			<Head>

@@ -22,7 +22,7 @@ const header = {
       structure: "Структура",
       management: "Руководство",      
       open_data: "Открытые данные",
-      department: "Аппарат управления"
+      department: "Территориальные станции"
    },
    sub_list_two: {
       jobs: "Вакансии",

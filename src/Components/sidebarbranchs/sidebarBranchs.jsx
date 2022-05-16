@@ -29,12 +29,16 @@ export default function Sidebar() {
 
    let cc
  
-   if (h.footer.bostonlik.split(" ")[0] !== "Бостанлыкская" ) {
-    cc = " SS"
-   }else{
-     cc = " CC"
+   if (h.footer.bostonlik.split(" ")[0] === "Бостанлыкская" ) {
+       cc = " CC"
+    }else if (h.footer.bostonlik.split(" ")[0] === "Bostanlik") {
+        cc = " TS"
+    }else{
+        cc = " KS"
    }
-     
+
+   
+ 
 return(<>
 
 <section className="sidebar">

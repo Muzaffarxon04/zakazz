@@ -29,12 +29,12 @@ const management = {
     Davlat kuzatish xizmati boshligʼi qonun hujjatlariga muvofiq boshqa vakolatlarni ham amalga oshirishi mumkin.`,
     data5: `
     Davlat kuzatish xizmatida zarur hollarda xavfli geologik jarayonlarni kuzatish jarayonida aniqlangan muammolarni tezkor hal etish boʼyicha tavsiyalar ishlab chiqilgan holda respublikada shakllanayotgan koʼchkilar holatini tahlil qilish maqsadida boshliq (shtab raisi), uning oʼrinbosarlari, shuningdek, hududiy kuzatish stantsiyalari boshliqlaridan iborat tarkibda tezkor shtab tashkil etiladi.`,
-dat6: `2000-2004 yy. - Toshkent davlat texnika universiteti talabasi (bakalavr)
-2004-2006 yy. - Toshkent davlat texnika universiteti talabasi (magistratura)
+data6: `2000-2004 yy. - Toshkent davlat texnika universiteti talabasi (bakalavr) \n
+2004-2006 yy. - Toshkent davlat texnika universiteti talabasi (magistratura) \n
 2006-2007yy. - Toshkent Davlat Texnika Universiteti “Gidrogeologiya, muhandislik 
-geologiyasi va razvedka ishlarining geofizik usullari” kafedrasining muhandisi
+geologiyasi va razvedka ishlarining geofizik usullari” kafedrasining muhandisi \n
 2007-2009 yy. - Xavfli geologik jarayonlarni kuzatish Davlat xizmati Boʼstonliq kuzatish 
-stantsiyasining 2-toifali gidrogeologi
+stantsiyasining 2-toifali gidrogeologi \n
 2009-2010 yy. - Toshkent Davlat Texnika Universiteti “Gidrogeologiya, muhandislik geologiyasi 
 va razvedka ishlarining geofizik usullari” kafedrasining muhandisi
 `,
