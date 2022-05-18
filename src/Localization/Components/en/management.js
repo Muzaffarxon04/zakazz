@@ -38,7 +38,7 @@ stantsiyasining 2-toifali gidrogeologi \n
 2009-2010 yy. - Toshkent Davlat Texnika Universiteti “Gidrogeologiya, muhandislik geologiyasi 
 va razvedka ishlarining geofizik usullari” kafedrasining muhandisi
 `,
-    data7: `2010-2012 yy. - Toshkent Davlat Texnika Universiteti “Gidrogeologiya, muhandislik geologiyasi 
+    data77: `2010-2012 yy. - Toshkent Davlat Texnika Universiteti “Gidrogeologiya, muhandislik geologiyasi 
 va razvedka ishlarining geofizik usullari” kafedrasining oʼqituvchisi
 2012-2015 yy. Oʼzbekiston Respublikasi Davlat geologiya va mineral resurlar qoʼmitasi 
 Oʼzbekiston Respublikasi Xavfli geologik jarayonlarni kuzatish Davlat xizmati 
