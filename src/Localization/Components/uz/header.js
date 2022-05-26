@@ -23,7 +23,7 @@ const header = {
       structure: "Tuzilishi",
       management: "Boshqaruv",
       open_data: "Ochiq ma'lumotlar",
-      department: "Boshqaruv bo'limi",
+      department: "Kuzatuv stantsiyalari",
    },
    sub_list_two: {
       jobs: "Ishlar",

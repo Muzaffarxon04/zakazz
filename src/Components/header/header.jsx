@@ -196,7 +196,6 @@ const Header = () => {
                   <span className="navbar_line"></span>
                 </li>
                 <li className="navbar__item">
-                  <Link href="/about">
                     <a
                       className={`navbar__item-link ${
                         router.pathname == "/"
@@ -206,7 +205,6 @@ const Header = () => {
                     >
                       {h.about}
                     </a>
-                  </Link>
                   <div className="item__row">
                     <Image
                       src={Arrow}
@@ -217,6 +215,13 @@ const Header = () => {
                     />
                   </div>
                   <ul className="navbar-item__dropdown">
+                  <li className="dropdown__item">
+                      <Link href="/about ">
+                        <a className="navbar__dropdown-link">
+                          {h.about}
+                        </a>
+                      </Link>
+                    </li>
                     <li className="dropdown__item">
                       <Link href="/legal_status ">
                         <a className="navbar__dropdown-link">
@@ -224,13 +229,7 @@ const Header = () => {
                         </a>
                       </Link>
                     </li>
-                    <li className="dropdown__item">
-                      <Link href="/charter">
-                        <a className="navbar__dropdown-link">
-                          {h.sub_list_one.charter}
-                        </a>
-                      </Link>
-                    </li>
+             
                     <li className="dropdown__item">
                       <Link href="/stricture">
                         <a className="navbar__dropdown-link">
