@@ -4,5 +4,6 @@ const contact = {
     email: "E-mail:",
     phone: "Telefon:",
     fax: "Faks:"
+
  }
  export default contact

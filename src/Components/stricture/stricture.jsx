@@ -4,7 +4,8 @@ import { useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Sidebar from "../../Components/sidebar/sidebar"
-import img2 from "../../Assets/images/lisense.png";
+import img1 from "../../Assets/images/stricture-rus.jpg";
+import img2 from "../../Assets/images/stricture-uzb.jpg";
 
 
 let arrov = '>'
@@ -32,6 +33,8 @@ export default function Contact() {
 
   const { header: y } = Content[lang];
 
+
+
 return(<>
 
 <section className="stricture">
@@ -53,7 +56,7 @@ return(<>
 <div className="lisense">
 <h1 className="stricture__title">{y.footer.stricture_title}</h1>
 
-<Image src={img2} alt="" width={1017} height={668} />
+<Image src={y.uz === "Узбекский" ? img1 : img2} alt="img" width={1017} height={668} />
 </div>
 </div>
 </div>
