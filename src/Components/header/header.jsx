@@ -93,10 +93,6 @@ const Header = () => {
               <button className="blinders-menu__btn" id="light-btn"  onClick={() => {document.body.classList.remove("dark") }}>A</button>
               <button className="blinders-menu__btn" id="dark-btn" onClick={() => {document.body.classList.add("dark") }}>A</button>
             </li>
-            <li className="blinders-menu__item">{h.for_blinders_list.font_size}</li>
-            <li className="blinders-menu__item">
-              <input type="range"  className="blinders-menu__input" onChange={(e) => {document.body.style.fontSize = `${e.target.value}px`}   }/>
-            </li>
           </ul>
             </div>
             <form className="search">

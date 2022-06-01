@@ -139,7 +139,7 @@ function LinksSlider() {
                   <Image src={Gerb} alt="hatchment" width={150} height={150} />
                 </div>
 
-                <a className="links__link" href={e.link} target="_blank">
+                <a className="links__link" href={e.link} target="blank">
                   {e.title}
                 </a>
               </SwiperSlide>
