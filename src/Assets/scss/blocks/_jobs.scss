@@ -1,0 +1,114 @@
+.jobs{
+
+.jobs-big__title{
+    text-align: center;
+font-size: 32px;
+font-weight: 550;
+line-height: 38px;
+margin-bottom: 32px;
+
+}
+    .jobs__list{
+
+        display: flex;
+        flex-wrap: wrap;
+background: #FFFFFF;
+justify-content: center;
+
+
+
+    }
+.jobs__item{
+    background: #FFFFFF;
+    width: 434px;
+    border-radius: 8px;
+    box-shadow: 0px 12px 40px 2px #25689E26;
+padding: 32px 32px 40px 32px;
+margin:0 30px 40px 0;
+
+&:last-child{
+    margin-right: 0;
+}
+.jobs__title-wrapper{
+font-size: 24px;
+font-weight: 550;
+line-height: 28px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+.jobs__title{
+    font-size: 24px;
+}
+
+
+time{
+    // font-family: "Open Sans";
+font-size: 14px;
+font-weight: 400;
+line-height: 19px;
+opacity: 0.5;
+position: relative;
+padding-left: 22px;
+&::before{
+    background:url("../../images/time.svg") no-repeat center;
+    left: 0;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+}
+}
+
+.jobs__badge{
+font-size: 14px;
+line-height: 16px;
+color: #0F77E1;
+padding: 6px 14px;
+background: #EEF7FF;
+border-radius: 4px;
+font-weight: 400;
+}
+}
+
+.jobs__info{
+    padding: 28px 0;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+opacity: 0.9;
+
+p{
+    padding-left: 26px;
+    margin-bottom: 17px;
+position: relative;
+&::before{
+    background:url("../../images/location-black.svg") no-repeat center;
+    left: 0;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+&:nth-child(2){
+    &::before{
+
+        background:url("../../images/bag.svg") no-repeat center;
+    }
+    
+}
+
+    &:last-child{
+        margin: 0;
+        &::before{
+
+            background:url("../../images/money.svg") no-repeat center;
+        }
+    }
+}
+}
+
+}

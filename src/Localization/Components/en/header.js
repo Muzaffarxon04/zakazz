@@ -24,6 +24,8 @@ const header = {
       management: "Management",
       open_data: "Open data",
       department: "Manadgement Department",
+      finance: "Финансовая деятельность",
+      structures: "Структурные подразделения"
    },
    sub_list_two: {
       jobs: "Jobs",

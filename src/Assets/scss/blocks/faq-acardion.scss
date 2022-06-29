@@ -1,0 +1,52 @@
+.faq__item{
+   padding: 25px 20px 0 20px;
+    list-style-type: none;
+min-height: 62px;
+border-bottom: 1px solid #D2D3D5CC;
+color: #242424;
+
+.management__first-block{
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+padding: 0 0 15px;
+
+
+.first-block__title{
+    width: 90%;
+    font-family: "Roboto Condensed";
+font-size: 20px;
+font-weight: 550;
+line-height: 22px;
+
+}
+
+    .faq-btn{
+        width: 15px;
+        height: 10px;
+        background-image: url("../../images/black-arrov.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(180deg);
+    }
+
+    .rotated{
+        transform: rotate(0deg);
+
+    }
+}
+
+    .management__second-block{
+        border: none;
+        padding: 0;
+
+
+    }
+    .management__second-block__description{
+margin-bottom: 20px;
+width: 90%;    
+font-size: 16px;
+line-height: 24px;
+opacity: 0.7;
+}
+}

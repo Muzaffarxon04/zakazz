@@ -219,7 +219,7 @@ const Header = () => {
                       </Link>
                     </li>
                     <li className="dropdown__item">
-                      <Link href="/legal_status ">
+                      <Link href="/legal_status">
                         <a className="navbar__dropdown-link">
                           {h.sub_list_one.legal_status}
                         </a>
@@ -346,14 +346,14 @@ const Header = () => {
                   </div>
                   <ul className="navbar-item__dropdown">
                     <li className="dropdown__item">
-                      <Link href="/">
+                      <Link href="/jobs">
                         <a className="navbar__dropdown-link">
                           {h.sub_list_two.jobs}
                         </a>
                       </Link>
                     </li>
                     <li className="dropdown__item">
-                      <Link href="/">
+                      <Link href="/faq">
                         <a className="navbar__dropdown-link">
                           {h.sub_list_two.faq}
                         </a>
@@ -370,13 +370,6 @@ const Header = () => {
                       <Link href="/">
                         <a className="navbar__dropdown-link">
                           {h.sub_list_two.fightagainstcorruption}
-                        </a>
-                      </Link>
-                    </li>
-                    <li className="dropdown__item">
-                      <Link href="/">
-                        <a className="navbar__dropdown-link">
-                          {h.sub_list_two.contract}
                         </a>
                       </Link>
                     </li>

@@ -24,6 +24,8 @@ const header = {
       management: "Boshqaruv",
       open_data: "Ochiq ma'lumotlar",
       department: "Kuzatuv stantsiyalari",
+      finance: "Финансовая деятельность",
+      structures: "Структурные подразделения"
    },
    sub_list_two: {
       jobs: "Ishlar",
