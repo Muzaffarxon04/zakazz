@@ -2,13 +2,7 @@ import Content from "../../Localization/Content";
 import Link from "next/link";
 import Image from "next/image";
 import { useSelector } from "react-redux";
-import Sidebar from "../sidebar/sidebar-second";
-
-
-import img1 from "../../Assets/images/youthpolicy1.png";
-import img2 from "../../Assets/images/youthpolicy2.png";
-import img3 from "../../Assets/images/youthpolicy3.png";
-import img4 from "../../Assets/images/youthpolicy4.png";
+import Sidebar from "../sidebar/sidebar";
 
 
 const arrov = ">";
@@ -31,7 +25,7 @@ const About = () => {
             </Link>
             {arrov}
             <Link href={"/about"}>
-              <a className="contact__link">{h.active}</a>
+              <a className="contact__link">{h.about}</a>
             </Link>
             {arrov}
             <Link href={"/about"}>
@@ -53,45 +47,7 @@ const About = () => {
               <p className="about__text">
               {a.youth_policy.text3}
               </p>
-              <div className="about__img-wrapper">
-                <span>
-                  <Image
-                    src={img1}
-                    alt="colectiv"
-                    width={455}
-                    height={300}
-                    className="images"
-                  />
-                </span>
-                <span>
-                  <Image
-                    src={img2}
-                    alt="colectiv"
-                    width={455}
-                    height={300}
-                    className="images"
-                  />
-                </span>
-                <span>
-                  <Image
-                    src={img3}
-                    alt="colectiv"
-                    width={455}
-                    height={300}
-                    className="images"
-                  />
-                </span>
-                <span>
-                  <Image
-                    src={img4}
-                    alt="img"
-                    width={455}
-                    height={300}
-                    className="images"
-                  />
-                </span>
-                
-              </div>
+        
             </div>
         
         

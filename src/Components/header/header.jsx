@@ -156,8 +156,8 @@ const Header = () => {
                       className="logo"
                       src={Logo}
                       alt="Ministry logo"
-                      maxwidth={100}
-                      maxheight={76}
+                      maxwidth={80}
+                      maxheight={80}
                       objectFit="cover"
                     />
                   </div>
@@ -211,13 +211,6 @@ const Header = () => {
                     />
                   </div>
                   <ul className="navbar-item__dropdown">
-                  <li className="dropdown__item">
-                      <Link href="/about ">
-                        <a className="navbar__dropdown-link">
-                          {h.about}
-                        </a>
-                      </Link>
-                    </li>
                     <li className="dropdown__item">
                       <Link href="/legal_status">
                         <a className="navbar__dropdown-link">
@@ -248,11 +241,9 @@ const Header = () => {
                       </Link>
                     </li>
                     <li className="dropdown__item">
-                      <Link href="/department">
                         <a className="navbar__dropdown-link">
                           {h.sub_list_one.department}
                         </a>
-                      </Link>
                       <ul className="dropdown-item__sub-dropdown">
                     <li className="sub-dropdown__item">
                       <Link href="/department/shakhrisabz">
@@ -360,14 +351,14 @@ const Header = () => {
                       </Link>
                     </li>
                     <li className="dropdown__item">
-                      <Link href="/">
+                      <Link href="/youthpolicy">
                         <a className="navbar__dropdown-link">
                           {h.sub_list_two.youthpolicy}
                         </a>
                       </Link>
                     </li>
                     <li className="dropdown__item">
-                      <Link href="/">
+                      <Link href="/fightagainst">
                         <a className="navbar__dropdown-link">
                           {h.sub_list_two.fightagainstcorruption}
                         </a>

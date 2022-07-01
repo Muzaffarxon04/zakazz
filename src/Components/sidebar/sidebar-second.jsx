@@ -35,7 +35,7 @@ return(<>
     <li className="sidebar__item"><Link href="/jobs"><a className="sidebar__link">{c.sub_list_two.jobs}</a></Link></li>
     <li className="sidebar__item"><Link href="/faq"><a className="sidebar__link">{c.sub_list_two.faq}</a></Link></li>
     <li className="sidebar__item"><Link href="/youthpolicy"><a className="sidebar__link">{c.sub_list_two.youthpolicy}</a></Link></li>
-    <li className="sidebar__item"><Link href="/fightagainstcorruption"><a className="sidebar__link">{c.sub_list_two.fightagainstcorruption}</a></Link></li>
+    <li className="sidebar__item"><Link href="/fightagainst"><a className="sidebar__link">{c.sub_list_two.fightagainstcorruption}</a></Link></li>
 </ul>
 </div>
 </>)

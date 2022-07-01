@@ -2,13 +2,12 @@ import Content from "../../Localization/Content";
 import Link from "next/link";
 import Image from "next/image";
 import { useSelector } from "react-redux";
-import Sidebar from "../sidebar/sidebar-second";
+import Sidebar from "../sidebar/sidebar";
 
 
-import img1 from "../../Assets/images/youthpolicy1.png";
-import img2 from "../../Assets/images/youthpolicy2.png";
-import img3 from "../../Assets/images/youthpolicy3.png";
-import img4 from "../../Assets/images/youthpolicy4.png";
+import img1 from "../../Assets/images/information-form.png";
+import img2 from "../../Assets/images/information-info-map.png";
+import img3 from "../../Assets/images/information-maps.png";
 
 
 const arrov = ">";
@@ -31,7 +30,7 @@ const About = () => {
             </Link>
             {arrov}
             <Link href={"/about"}>
-              <a className="contact__link">{h.active}</a>
+              <a className="contact__link">{h.about}</a>
             </Link>
             {arrov}
             <Link href={"/about"}>
@@ -58,8 +57,8 @@ const About = () => {
                   <Image
                     src={img1}
                     alt="colectiv"
-                    width={455}
-                    height={300}
+                    width={1000}
+                    height={696}
                     className="images"
                   />
                 </span>
@@ -67,8 +66,8 @@ const About = () => {
                   <Image
                     src={img2}
                     alt="colectiv"
-                    width={455}
-                    height={300}
+                    width={1000}
+                    height={719}
                     className="images"
                   />
                 </span>
@@ -76,20 +75,12 @@ const About = () => {
                   <Image
                     src={img3}
                     alt="colectiv"
-                    width={455}
-                    height={300}
+                    width={1000}
+                    height={716}
                     className="images"
                   />
                 </span>
-                <span>
-                  <Image
-                    src={img4}
-                    alt="img"
-                    width={455}
-                    height={300}
-                    className="images"
-                  />
-                </span>
+            
                 
               </div>
             </div>

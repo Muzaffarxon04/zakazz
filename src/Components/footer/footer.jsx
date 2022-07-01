@@ -44,8 +44,8 @@ const Footer = () => {
                       className="footer__logo"
                       src={Logo}
                       alt="Ministry logo"
-                      maxwidth={100}
-                      maxheight={76}
+                      maxwidth={80}
+                      maxheight={80}
                       objectFit="cover"
                     />
                   </div>

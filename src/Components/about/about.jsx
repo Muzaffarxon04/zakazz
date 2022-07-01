@@ -11,7 +11,6 @@ import img4 from "../../Assets/images/aboutPhoto-4.png";
 import img5 from "../../Assets/images/aboutPhoto-5.png";
 import img6 from "../../Assets/images/aboutPhoto-6.png";
 
-
 const arrov = ">";
 
 const About = () => {
@@ -43,54 +42,30 @@ const About = () => {
             <Sidebar />
             <div className="about-box">
               <h1 className="about__title">{h.about}</h1>
-              <p className="about__text">
-               {a.about.about__text1}
-              </p>
+              <p className="about__text">{a.about.about__text1}</p>
               <br />
-              <p className="about__text">
-              {a.about.about__text2}
-              </p>
+              <p className="about__text">{a.about.about__text2}</p>
               <br />
-              <p className="about__text">
-              {a.about.about__text3}
-              </p>
+              <p className="about__text">{a.about.about__text3}</p>
               <br />
               <h2 className="about__subtitle">{a.about.about__text4}</h2>
-              <p className="about__text">
-              {a.about.about__text5}
-              </p>
+              <p className="about__text">{a.about.about__text5}</p>
               <br />
-              <p className="about__text">
-              {a.about.about__text6}
-              </p>
+              <p className="about__text">{a.about.about__text6}</p>
               <br />
-              <p className="about__text">
-              {a.about.about__text7}
-              </p>
+              <p className="about__text">{a.about.about__text7}</p>
               <br />
-              <p className="about__text">
-              {a.about.about__text8}
-              </p>
+              <p className="about__text">{a.about.about__text8}</p>
               <br />
-              <p className="about__text">
-              {a.about.about__text9}
-              </p>
+              <p className="about__text">{a.about.about__text9}</p>
               <br />
-              <p className="about__text">
-              {a.about.about__text10}
-              </p>
-              <p className="about__text">
-              {a.about.about__text11}
-              </p>
+              <p className="about__text">{a.about.about__text10}</p>
+              <p className="about__text">{a.about.about__text11}</p>
               <br />
               <h2 className="about__subtitle">{a.about.about__text12}</h2>
-              <p className="about__text">
-              {a.about.about__text13}
-              </p>
+              <p className="about__text">{a.about.about__text13}</p>
               <br />
-              <p className="about__text">
-              {a.about.about__text14}
-              </p>
+              <p className="about__text">{a.about.about__text14}</p>
 
               <div className="about__img-wrapper">
                 <span>

@@ -1,0 +1,39 @@
+.folder__item{
+    padding: 24px 36px;
+    box-shadow: 0px 12px 32px 2px #25689E26;
+    background: #FFFFFF;
+    height: 96px;
+    width: 100%;
+    border-radius: 8px;
+   
+}
+
+.img-content{
+    display: flex;
+    align-items: center;
+    div{
+        margin-left: 24px;
+    }
+}
+
+.folder__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.folder__title{
+font-size: 20px;
+font-weight: 550;
+line-height: 23px;
+color: #242424;
+
+}
+
+.folder__size{
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+color: #24242480;
+
+}

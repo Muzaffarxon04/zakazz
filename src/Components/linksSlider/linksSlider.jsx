@@ -9,86 +9,91 @@ import { Autoplay, Pagination, EffectFade } from "swiper";
 //img
 import Gerb from "../../Assets/images/gerb.png";
 
-const arr = [
-  {
-    id: 1,
-    link: "https://www.mf.uz/uz/",
-    title: "www.mf.uz",
-  },
-  {
-    id: 2,
-    link: "https://www.mf.uz/uz/",
-    title: "www.mf.uz",
-  },
-  {
-    id: 3,
-    link: "https://www.mf.uz/uz/",
-    title: "www.mf.uz",
-  },
-  {
-    id: 4,
-    link: "https://www.mf.uz/uz/",
-    title: "www.mf.uz",
-  },
-  {
-    id: 5,
-    link: "https://www.mf.uz/uz/",
-    title: "www.mf.uz",
-  },
-  {
-    id: 6,
-    link: "https://www.mf.uz/uz/",
-    title: "www.mf.uz",
-  },
-  {
-    id: 7,
-    link: "https://www.mf.uz/uz/",
-    title: "www.mf.uz",
-  },
-  {
-    id: 8,
-    link: "https://www.mf.uz/uz/",
-    title: "www.mf.uz",
-  },
-  {
-    id: 9,
-    link: "https://www.mf.uz/uz/",
-    title: "www.mf.uz",
-  },
-  {
-    id: 10,
-    link: "https://www.mf.uz/uz/",
-    title: "www.mf.uz",
-  },
-  {
-    id: 11,
-    link: "https://www.mf.uz/uz/",
-    title: "www.mf.uz",
-  },
-  {
-    id: 12,
-    link: "https://www.mf.uz/uz/",
-    title: "www.mf.uz",
-  },
-  {
-    id: 13,
-    link: "https://www.mf.uz/uz/",
-    title: "www.mf.uz",
-  },
-  {
-    id: 14,
-    link: "https://www.mf.uz/uz/",
-    title: "www.mf.uz",
-  },
-  {
-    id: 15,
-    link: "https://www.mf.uz/uz/",
-    title: "www.mf.uz",
-  },
-];
+let Url = "http://46.101.231.43:7070"
+
+
+
+
+// const arr = [
+//   {
+//     id: 1,
+//     link: "https://www.mf.uz/uz/",
+//     title: "www.mf.uz",
+//   },
+//   {
+//     id: 2,
+//     link: "https://www.mf.uz/uz/",
+//     title: "www.mf.uz",
+//   },
+//   {
+//     id: 3,
+//     link: "https://www.mf.uz/uz/",
+//     title: "www.mf.uz",
+//   },
+//   {
+//     id: 4,
+//     link: "https://www.mf.uz/uz/",
+//     title: "www.mf.uz",
+//   },
+//   {
+//     id: 5,
+//     link: "https://www.mf.uz/uz/",
+//     title: "www.mf.uz",
+//   },
+//   {
+//     id: 6,
+//     link: "https://www.mf.uz/uz/",
+//     title: "www.mf.uz",
+//   },
+//   {
+//     id: 7,
+//     link: "https://www.mf.uz/uz/",
+//     title: "www.mf.uz",
+//   },
+//   {
+//     id: 8,
+//     link: "https://www.mf.uz/uz/",
+//     title: "www.mf.uz",
+//   },
+//   {
+//     id: 9,
+//     link: "https://www.mf.uz/uz/",
+//     title: "www.mf.uz",
+//   },
+//   {
+//     id: 10,
+//     link: "https://www.mf.uz/uz/",
+//     title: "www.mf.uz",
+//   },
+//   {
+//     id: 11,
+//     link: "https://www.mf.uz/uz/",
+//     title: "www.mf.uz",
+//   },
+//   {
+//     id: 12,
+//     link: "https://www.mf.uz/uz/",
+//     title: "www.mf.uz",
+//   },
+//   {
+//     id: 13,
+//     link: "https://www.mf.uz/uz/",
+//     title: "www.mf.uz",
+//   },
+//   {
+//     id: 14,
+//     link: "https://www.mf.uz/uz/",
+//     title: "www.mf.uz",
+//   },
+//   {
+//     id: 15,
+//     link: "https://www.mf.uz/uz/",
+//     title: "www.mf.uz",
+//   },
+// ];
 
 function LinksSlider() {
-  const [data, setData] = useState(arr);
+  const [data, setData] = useState([]);
 
   const langValue = useRef();
   const dispatch = useDispatch();
@@ -106,14 +111,17 @@ function LinksSlider() {
     langValue.current();
   }, []);
 
+
+console.log(data);
+
   const { links: l } = Content[lang];
 
-  // useEffect(() => {
-  //     fetch('',)
-  //         .then(res => res.json())
-  //         .then(data => setData(data.data))
-  //         .catch(e => console.log(e))
-  // }, [])
+   useEffect(() => {
+      fetch(`${Url}/links`,)
+          .then(res => res.json())
+          .then(data => setData(data.result))
+          .catch(e => console.log(e))
+  }, [])
 
   return (
     <>
@@ -136,11 +144,11 @@ function LinksSlider() {
             data.map((e, i) => (
               <SwiperSlide key={i} className="links__slide">
                 <div className="links__img">
-                  <Image src={Gerb} alt="hatchment" width={150} height={150} />
+                  <Image src={e.img > 50 ? e.img : Gerb} alt="hatchment" width={150} height={150} />
                 </div>
 
-                <a className="links__link" href={e.link} target="blank">
-                  {e.title}
+                <a className="links__link" href={e.url} target="blank">
+                  {e.title ? e.title : " link"}
                 </a>
               </SwiperSlide>
             ))}
