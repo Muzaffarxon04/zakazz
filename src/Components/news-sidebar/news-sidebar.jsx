@@ -3,9 +3,9 @@ import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
 import Content from "../../Localization/Content";
 import { useDispatch, useSelector } from "react-redux";
-
+import { useRouter } from "next/router";
 import normalizeDate from "../../utils/time";
-
+const parse = require('html-react-parser');
 
 import img2 from "../../Assets/images/news2.png";
 
@@ -144,17 +144,32 @@ const arr = [
 ];
 
 
-function News() {
+function News({Url}) {
   // const img = 'https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg'
 
-  const [data, setData] = useState(arr);
-  const [news, setNews] = useState(arr);
-
+  const [data, setData] = useState([]);
+  const [news, setNews] = useState([]);
+  const router = useRouter()
+  const id = router.query.id // ? router.query.id : ""
+  
   const langValue = useRef();
   const dispatch = useDispatch();
   const {
     count: { lang },
   } = useSelector((state) => state);
+  
+  console.log(news);
+  async function News() {
+  
+  
+    let res = await fetch(`${Url}/news/${id}`)
+    let data = await res.json()
+    if (data) {
+      setNews(data.result[0])
+
+    }
+    
+    }
 
   function getLang() {
     dispatch({ type: window.localStorage.getItem("lang") || "ru" });
@@ -166,16 +181,25 @@ function News() {
     langValue.current();
   }, []);
 
+  useEffect(() => {
+    News()
+  }, [id]);
+
   const { header: y } = Content[lang];
 
-  // useEffect(() => {
-  //     fetch('',)
-  //         .then(res => res.json())
-  //         .then(data => setData(data.data.reverse().slice(1, 4)), setNews(data.data.slice(0, 1)))
-  //         .catch(e => console.log(e))
-  // }, [])
+ 
 
-  return (
+  useEffect(() => {
+    fetch(`${Url}/news`,)
+        .then(res => res.json())
+        .then(data => setData(data.result))
+        .catch(e => console.log(e))
+}, [])
+
+
+
+        return (
+
     <>
           <section className="single-news">
 		  <div className="container">
@@ -188,8 +212,9 @@ function News() {
                 <a className="contact__link">{y.news}</a>
               </Link>
               {arrov}
-<Link href={"/news"}>
-                <a className="contact__link">Xalqaro to‘lov tizimlari Rossiyadan chiqib ketishi o‘zbekistonlik migrantlarning pul o‘tkazmalariga ta’sir qiladimi?</a>
+              
+<Link href={`/news/${id}`}>
+                <a className="contact__link">{news.length ? news[0].title : ""}</a>
               </Link>
 		  </div>
 		   <div className="single-news__wrapper">
@@ -197,13 +222,13 @@ function News() {
               {data &&
                 data.slice(0, 6).map((e, i) => (
                   <li className="sidebar-news__news-item" key={i}>
-                  <Link href={"news/" + e.id}>
+                  <Link href={"/news/" + e.id}>
                         <a>
                     <div className="sidebar-news__news-content">
                       <div className="news__news-time">
-                        <time>{normalizeDate(data[0].time)}</time>
+                        <time>{normalizeDate(e.created_at)}</time>
                       </div>
-                      <h3 className="news-news__title">{data[0].title}</h3>
+                      <h3 className="news-news__title">{e.title}</h3>
                     </div>
                         </a>
                         </Link>
@@ -211,8 +236,8 @@ function News() {
                 ))}
             </ul>
 
-            <div className="single-news__news">
-                <h2>Xalqaro to‘lov tizimlari Rossiyadan chiqib ketishi o‘zbekistonlik migrantlarning pul o‘tkazmalariga ta’sir qiladimi?</h2>
+            <div className="single-news__news" >
+            {parse(news.content ? news.content : '<span/><span>')}
             </div>
            </div>
           </div>

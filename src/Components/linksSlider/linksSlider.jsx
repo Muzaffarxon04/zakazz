@@ -9,7 +9,6 @@ import { Autoplay, Pagination, EffectFade } from "swiper";
 //img
 import Gerb from "../../Assets/images/gerb.png";
 
-let Url = "http://46.101.231.43:7070"
 
 
 
@@ -92,7 +91,7 @@ let Url = "http://46.101.231.43:7070"
 //   },
 // ];
 
-function LinksSlider() {
+function LinksSlider({Url}) {
   const [data, setData] = useState([]);
 
   const langValue = useRef();
@@ -111,8 +110,9 @@ function LinksSlider() {
     langValue.current();
   }, []);
 
-
-console.log(data);
+  const myLoader=({src})=>{
+    return `${Url}${src}`;
+  }
 
   const { links: l } = Content[lang];
 
@@ -144,7 +144,7 @@ console.log(data);
             data.map((e, i) => (
               <SwiperSlide key={i} className="links__slide">
                 <div className="links__img">
-                  <Image src={e.img > 50 ? e.img : Gerb} alt="hatchment" width={150} height={150} />
+                  <Image loader={myLoader} src={`${e.img}`} alt={e.title} width={150} height={150} />
                 </div>
 
                 <a className="links__link" href={e.url} target="blank">

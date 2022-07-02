@@ -53,11 +53,14 @@ const arr = [
   },
 ];
 
-function HomeNews() {
+function HomeNews({Url}) {
   // const img = 'https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg'
 
+  const myLoaders=({src})=>{
+    return `${Url}${src}`;
+  }
   const [data, setData] = useState(arr);
-  const [news, setNews] = useState(arr);
+  const [news, setNews] = useState([]);
 
   const langValue = useRef();
   const dispatch = useDispatch();
@@ -72,10 +75,21 @@ function HomeNews() {
   langValue.current = getLang;
 
   useEffect(() => {
+    fetch(`${Url}/news`,)
+        .then(res => res.json())
+        .then(data => setNews(data.result))
+        .catch(e => console.log(e))
+}, [])
+
+
+  useEffect(() => {
     langValue.current();
   }, []);
 
+
   const { homeNews: h } = Content[lang];
+
+
 
   // useEffect(() => {
   //     fetch('',)
@@ -83,6 +97,7 @@ function HomeNews() {
   //         .then(data => setData(data.data.reverse().slice(1, 4)), setNews(data.data.slice(0, 1)))
   //         .catch(e => console.log(e))
   // }, [])
+
 
   return (
     <>
@@ -92,41 +107,48 @@ function HomeNews() {
 
           <div className="home__news__box">
             <div className="home__news__big-new-box">
-              <Link href={"news/" + data[0].id}>
+            {news &&
+                  news.slice(0, 1).map((e, i) => (
+<>
+<Link href={"news/" + e.id}>
                 <a>
                   <div>
-                    <Image src={img1} alt="" width={790} height={500} className="rasm"/>
+                    <Image loader={myLoaders} src={`/uploads/IMG_1656691533762.png`} alt={e.title} width={790} height={500} className="rasm"/>
+                    
                   </div>
 
                   <p className="home__news__big-new-box__time">
-                    {normalizeDate(data[0].time)}
+                    {normalizeDate(e.created_at)}
                   </p>
 
                   <h3 className="home__news__big-new-box__heading">
-                    {data[0].title}
+                    {e.title}
                   </h3>
 
                   <p className="home__news__big-new-box__text">
-                    {data[0].desc.split(" ").slice(0, 20).join(" ") + "..."}
+                    {e.info.split(" ").slice(0, 20).join(" ") + "..."}
                   </p>
                 </a>
               </Link>
+</>
+                  ))}
+              
             </div>
 
             <div className="home__news__news-list-wrapper">
               <ul className="home__news__news-list">
-                {data &&
-                  data.slice(1, 5).map((e, i) => (
+                {news &&
+                  news.slice(1, 5).map((e, i) => (
                     <li className="home__news__news-item" key={i}>
                       <Link href={"news/" + e.id}>
                         <a>
-                          <div className="home__news__news-img">
-                            <Image src={img2} alt="" width={120} height={110} className="home__news__news-image"/>
+                          <div className="home__news__news-img" >
+                            <Image loader={myLoaders} src={`/uploads/IMG_1656691533762.png`} alt={e.title} width={120} height={110} className="home__news__news-image"/>
                           </div>
 
                           <div className="home__news__news-item__content">
-                            <time>{normalizeDate(data[0].time)}</time>
-                            <h3 className="">{data[0].title}</h3>
+                            <time>{normalizeDate(e.created_at)}</time>
+                            <h3 className="home__news__news-item__title">{e.title}</h3>
                           </div>
                         </a>
                       </Link>

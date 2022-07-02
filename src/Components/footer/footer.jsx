@@ -33,7 +33,6 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="footer">
         <div className="container">
           <div className="footer__top">
             <div className="footer__info">
@@ -215,14 +214,13 @@ const Footer = () => {
 <div className="footer-address">
 <div className="container">
 <ul className="footer-address__list">
-  <li className="footer-address__item">© 2001—2016 Правительственный портал Республики Узбекистан</li>
+  <li className="footer-address__item">© 2021 Правительственный портал Республики Узбекистан</li>
   <li className="footer-address__item">Все права защищены</li>
   <li className="footer-address__item">Условия эксплуатации</li>
 </ul>
 </div>
 
         </div>
-      </footer>
     </>
   );
 };

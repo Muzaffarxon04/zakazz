@@ -212,13 +212,19 @@ const Header = () => {
                   </div>
                   <ul className="navbar-item__dropdown">
                     <li className="dropdown__item">
+                      <Link href="/about">
+                        <a className="navbar__dropdown-link">
+                          {h.about}
+                        </a>
+                      </Link>
+                    </li>
+                    <li className="dropdown__item">
                       <Link href="/legal_status">
                         <a className="navbar__dropdown-link">
                           {h.sub_list_one.legal_status}
                         </a>
                       </Link>
                     </li>
-             
                     <li className="dropdown__item">
                       <Link href="/stricture">
                         <a className="navbar__dropdown-link">
@@ -230,13 +236,6 @@ const Header = () => {
                       <Link href="/management">
                         <a className="navbar__dropdown-link">
                           {h.sub_list_one.management}
-                        </a>
-                      </Link>
-                    </li>
-                    <li className="dropdown__item">
-                      <Link href="/open_data">
-                        <a className="navbar__dropdown-link">
-                          {h.sub_list_one.open_data}
                         </a>
                       </Link>
                     </li>

@@ -62,15 +62,27 @@
             opacity: 0.7;
         }
     }
+    
+
+    .home__news__news-item__content{
+        max-width: 420px;
+        width: 100%;
+    }
     .home__news__news-list-wrapper{
 padding-bottom: 100px;
 }
+
+.home__news__news-item__title{
+    width: 370px;
+}
+
     .home__news__news-list {
 
         margin: 0;
         margin-bottom: 20px;
         li {
-
+            max-width: 500px;
+            width: 100%;
             padding-bottom: 22px;
             border-bottom: 1px solid #25689e;
         }
@@ -183,6 +195,7 @@ object-fit: cover;
 
         .home__news__news-item__content{
             width: 70%;
+            background-color: red !important;
         }
     }
 }

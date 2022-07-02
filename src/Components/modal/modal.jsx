@@ -26,9 +26,8 @@ const arrr = [
         img: 'https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg'
     },
 ]
-
-function Modal({ modal, setModal }) {
-    const [data, setData] = useState(arrr)
+function Modal({ modal, setModal , Url}) {
+    const [data, setData] = useState([])
 
     // useEffect(() => {
     //     fetch('')
@@ -37,12 +36,22 @@ function Modal({ modal, setModal }) {
     //         .catch(e => console.log(e))
     // }, [modal])
 
+    useEffect(() => {
+        fetch(`${Url}/galery`,)
+            .then(res => res.json())
+            .then(data => setData(data.result))
+            .catch(e => console.log(e))
+    }, [data])
+
+    const myLoader=({src})=>{
+        return `${Url}${src}`;
+      }
 
     return (
         <>
-            <div className={modal[0] ? 'modal modal__show' : 'modal'} onClick={() => setModal([false])}>
+            <div className={modal[0] ? 'modal modal__show' : 'modal'} >
             
-                <div className="modal__item ">
+                <div className="modal__item " onClick={() => setModal([true])}>
                     <Swiper
                         className="modal__slider"
                         modules={[Navigation]}
@@ -56,7 +65,12 @@ function Modal({ modal, setModal }) {
                         {
                             data && data.map((e, i) => (
                                 <SwiperSlide key={i}>
-                                    <Image src={BigPhoto} alt={e.img} width={1200} height={600} />
+                                      <Image
+                    loader={myLoader}
+                      src={e.photos[0]}
+                      alt={e.title}
+                      width={1200} height={600}
+                      />
                                 </SwiperSlide>
                             ))
                         }

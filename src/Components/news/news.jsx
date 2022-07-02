@@ -144,12 +144,10 @@ const arr = [
 ];
 
 
-function News() {
+function News({Url}) {
   // const img = 'https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg'
 
-  const [data, setData] = useState(arr);
-  const [news, setNews] = useState(arr);
-
+  const [data, setData] = useState([]);
   const langValue = useRef();
   const dispatch = useDispatch();
   const {
@@ -161,6 +159,13 @@ function News() {
   }
 
   langValue.current = getLang;
+
+  useEffect(() => {
+    fetch(`${Url}/news`,)
+        .then(res => res.json())
+        .then(data => setData(data.result))
+        .catch(e => console.log(e))
+}, [])
 
   useEffect(() => {
     langValue.current();
@@ -202,9 +207,9 @@ function News() {
                     </div>
                     <div className="news__news-content">
                       <div className="news__news-time">
-                        <span>{normalizeDate(data[0].time)}</span>
+                        <span>{normalizeDate(e.created_at)}</span>
                       </div>
-                      <h3 className="news-news__title">{data[0].title}</h3>
+                      <h3 className="news-news__title">{e.title}</h3>
                     </div>
                         </a>
                         </Link>

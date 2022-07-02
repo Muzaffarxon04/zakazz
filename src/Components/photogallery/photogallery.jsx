@@ -12,6 +12,8 @@ import SmallPhoto from "../../Assets/images/smallphoto.png";
 //img
 import Arrow from "../../Assets/images/arrow";
 
+
+
 const arr = [
   {
     id: 1,
@@ -43,9 +45,16 @@ const arr = [
   },
 ];
 
-function Photogallery() {
+function Photogallery({Url}) {
+
+
   // const img = 'https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg'
-  const [data, setData] = useState(arr);
+  
+  
+  const myLoader=({src})=>{
+    return `${Url}${src}`;
+  }
+  const [data, setData] = useState([]);
   const [modal, setModal] = useState([false]);
 
   const langValue = useRef();
@@ -63,6 +72,13 @@ function Photogallery() {
   useEffect(() => {
     langValue.current();
   }, []);
+
+  useEffect(() => {
+    fetch(`${Url}/galery`,)
+        .then(res => res.json())
+        .then(data => setData(data.result))
+        .catch(e => console.log(e))
+}, [data])
 
   const { photogallery: p } = Content[lang];
 
@@ -90,10 +106,12 @@ function Photogallery() {
           >
             {data &&
               data.map((e, i) => (
+          <>
                 <SwiperSlide key={i} onClick={() => setModal([true, i])}>
                   <div className="photogallery__slider__img" >
                     <Image
-                      src={SmallPhoto}
+                    loader={myLoader}
+                      src={e.photos[0]}
                       alt={e.title}
                       width={435}
                       height={320}
@@ -101,6 +119,7 @@ function Photogallery() {
                   </div>
                   <h3 className="photogallery__slider__title" >{e.title}</h3>
                 </SwiperSlide>
+          </>
               ))}
           </Swiper>
 
@@ -122,7 +141,7 @@ function Photogallery() {
           </button>
         </div>
 
-        <Modal setModal={setModal} modal={modal} />
+              <Modal setModal={setModal} modal={modal} Url={Url}/>
         
       </section>
     </>

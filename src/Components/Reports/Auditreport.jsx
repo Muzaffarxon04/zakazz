@@ -9,7 +9,9 @@ import Card from "./card";
 
 const arrov = ">";
 
-const About = () => {
+const About = ({Url}) => {
+	console.log(Url);
+
   const {
     count: { lang },
   } = useSelector((state) => state);

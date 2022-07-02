@@ -5,7 +5,7 @@ import Auditreport from "../src/Components/Reports/Auditreport";
 ;
 
 
-export default function Aboutf() {
+export default function Aboutf({Url}) {
 	return (
 		<>
 			<Head>
@@ -15,7 +15,7 @@ export default function Aboutf() {
 			</Head>
 
 			<Layout>
-		<Auditreport/>
+		<Auditreport Url={Url}/>
 			</Layout>
 		</>
 	);

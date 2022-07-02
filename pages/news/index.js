@@ -1,11 +1,11 @@
 import Head from 'next/head';
 
-import Layout from "../src/Components/layout/layout";
-import Sidebar from "../src/Components/news-sidebar/news-sidebar";
+import Layout from "../../src/Components/layout/layout";
+import Sidebar from "../../src/Components/news/news";
 ;
 
 
-export default function SingleNews() {
+export default function News({Url}) {
 	return (
 		<>
 			<Head>
@@ -15,7 +15,7 @@ export default function SingleNews() {
 			</Head>
 
 			<Layout>
-			<Sidebar/>
+			<Sidebar Url={Url}/>
 			</Layout>
 		</>
 	);

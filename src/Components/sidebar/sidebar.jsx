@@ -39,11 +39,11 @@ return(<>
 
 <div className="sidebar">
 <ul className="sidebar__list">
+    <li className="sidebar__item"><Link href="/about"><a className="sidebar__link">{c.about}</a></Link></li>
     <li className="sidebar__item"><Link href="/legal_status"><a className="sidebar__link">{c.sub_list_one.legal_status}</a></Link></li>
 
     <li className="sidebar__item"><Link href="/stricture"><a className="sidebar__link">{c.sub_list_one.structure}</a></Link></li>
     <li className="sidebar__item"><Link href="/management"><a className="sidebar__link">{c.sub_list_one.management}</a></Link></li>
-    <li className="sidebar__item"><Link href="/open_data"><a className="sidebar__link">{c.sub_list_one.open_data}</a></Link></li>
     <li className="sidebar__item dropdown-item"><a className="sidebar__link">{c.sub_list_one.finance}</a>
     <ul className="sidebar__dropdown-first">
     <li className="sidebar-dropdown__item"><Link href="/financial"><a className="sidebar__link">{c.sub_list_one.financial}</a></Link></li>

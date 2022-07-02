@@ -39,9 +39,9 @@ const arr = [
   },
 ];
 
-function Intro() {
-  // const img = 'https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg'
-  const [data, setData] = useState(arr);
+function Intro({Url}) {
+  const img = 'https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg'
+  const [data, setData] = useState([]);
 
   const langValue = useRef();
   const dispatch = useDispatch();
@@ -55,9 +55,20 @@ function Intro() {
 
   langValue.current = getLang;
 
+
+
   useEffect(() => {
     langValue.current();
   }, []);
+
+  useEffect(() => {
+    fetch(`${Url}/intro`,)
+        .then(res => res.json())
+        .then(data => setData(data.result))
+        .catch(e => console.log(e))
+}, [])
+
+
 
   const { photogallery: d } = Content[lang];
 
@@ -72,9 +83,9 @@ function Intro() {
     <section className="intro">
       <Swiper
         className="intro__slider"
-        spaceBetween={30}
+        spaceBetween={20}
         autoplay={{
-          delay: 2500,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -86,14 +97,14 @@ function Intro() {
           data.map((e, i) => (
             <SwiperSlide
               key={i}
-              className="intro__slider__item " /* </Swiper>*style={{ backgroundImage: `url('../../images/intro.png') !important` }} */
+              className="intro__slider__item " style={{ background:`url(${Url}${e.img}) no-repeat`  }} 
             >
               <div className="container">
                 <div className="slider__box">
                   <h2 className="slider__box__title">{e.title}</h2>
-                  <p className="slider__box__subtitle">{e.desc.split(" ").slice(0, 20).join(" ") + "..."}</p>
+                  <p className="slider__box__subtitle">{e.info.split(" ").slice(0, 20).join(" ") + "..."}</p>
                   <button>
-                    <Link href={e.link}>
+                    <Link href={e.img}>
                       <a>{d.more}</a>
                     </Link>
                   </button>

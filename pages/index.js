@@ -9,7 +9,7 @@ import AboutService from '../src/Components/aboutService/AboutService';
 import HomeAdditional from '../src/Components/homeAdditional/HomeAdditional';
 
 
-export default function Home() {
+export default function Home({Url}) {
 	return (
 		<>
 			<Head>
@@ -19,12 +19,12 @@ export default function Home() {
 			</Head>
 
 			<Layout>
-				<Intro />
-				<HomeNews />
+				<Intro Url={Url}/>
+				<HomeNews Url={Url}/>
 				<AboutService />
 				<HomeAdditional />
-				<Photogallery />
-				<LinksSlider />
+				<Photogallery Url={Url}/>
+				<LinksSlider Url={Url}/>
 			</Layout>
 		</>
 	);
