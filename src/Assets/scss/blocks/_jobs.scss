@@ -112,3 +112,11 @@ position: relative;
 }
 
 }
+
+
+
+@media only screen and (max-width:500px) {
+    .jobs__item{
+margin-right: 0 !important;
+    }
+}
