@@ -30,9 +30,9 @@ const About = () => {
               <a className="contact__link">{h.home}</a>
             </Link>
             {arrov}
-            <Link href={"/about"}>
+            {/* <Link href={"/about"}> */}
               <a className="contact__link">{h.active}</a>
-            </Link>
+            {/* </Link> */}
             {arrov}
             <Link href={"/about"}>
               <a className="contact__link">{h.sub_list_two.youthpolicy}</a>

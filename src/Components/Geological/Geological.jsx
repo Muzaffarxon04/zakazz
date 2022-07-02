@@ -22,23 +22,31 @@ const About = () => {
     <>
       <section className="about">
         <div className="container">
-          <div className="navigatsiya">
+        <div className="navigatsiya">
             <Link href={"/"}>
               <a className="contact__link">{h.home}</a>
             </Link>
             {arrov}
-            <Link href={"/about"}>
+            {/* <Link href={"/about"}> */}
               <a className="contact__link">{h.about}</a>
-            </Link>
+            {/* </Link> */}
             {arrov}
-            <Link href={"/about"}>
-              <a className="contact__link">{h.sub_list_two.youthpolicy}</a>
+            {/* <Link href={"/about"}> */}
+              <a className="contact__link">{h.sub_list_one.structures}</a>
+            {/* </Link> */}
+            {arrov}
+            {/* <Link href={"/about"}> */}
+              <a className="contact__link">{h.sub_list_one.aparat}</a>
+            {/* </Link> */}
+            {arrov}
+            <Link href={"/geological"}>
+              <a className="contact__link">{h.sub_list_one.geology}</a>
             </Link>
           </div>
           <div className="about-wrapper">
             <Sidebar />
             <div className="about-box">
-              <h1 className="about__title">{h.sub_list_two.youthpolicy}</h1>
+              <h1 className="about__title">{h.sub_list_one.geology}</h1>
               <p className="about__text">
                {a.youth_policy.text1}
               </p>

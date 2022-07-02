@@ -25,7 +25,13 @@ const header = {
       open_data: "Ochiq ma'lumotlar",
       department: "Kuzatuv stantsiyalari",
       finance: "Финансовая деятельность",
-      structures: "Структурные подразделения"
+      structures: "Структурные подразделения",
+      aparat:"Аппарат управления",
+      inform_department:"Информационно-аналитический отдел",
+      geology:"Геологический отдел",
+      relationships:"Международные отношения",
+      financial:"Финансовые отчёты",
+   audit:"Аудиторское заключение",
    },
    sub_list_two: {
       jobs: "Ishlar",

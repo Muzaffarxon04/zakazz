@@ -27,17 +27,21 @@ const About = () => {
             </Link>
             {arrov}
             {/* <Link href={"/about"}> */}
-              <a className="contact__link">{h.active}</a>
+              <a className="contact__link">{h.about}</a>
+            {/* </Link> */}
+            {arrov}
+             {/* <Link href={"/about"}> */}
+             <a className="contact__link">{h.sub_list_one.finance}</a>
             {/* </Link> */}
             {arrov}
             <Link href={"/faq"}>
-              <a className="contact__link">{h.sub_list_two.faq}</a>
+              <a className="contact__link">{h.sub_list_one.audit}</a>
             </Link>
           </div>
           <div className="about-wrapper">
             <Sidebar />
             <div className="about-box">
-              <h1 className="about__title">{h.sub_list_two.faq}</h1>
+              <h1 className="about__title">{h.sub_list_one.audit}</h1>
              <ul>
                    <Card title="Отчёт о финансовых результатах 
 за 1 квартал 2022 года" size="Размер: 16.19 KB"/>

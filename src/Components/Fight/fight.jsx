@@ -26,19 +26,19 @@ const About = () => {
               <a className="contact__link">{h.home}</a>
             </Link>
             {arrov}
-            <Link href={"/about"}>
+            {/* <Link href={"/about"}> */}
               <a className="contact__link">{h.active }</a>
-            </Link>
+            {/* </Link> */}
             {arrov}
-            <Link href={"/about"}>
-              <a className="contact__link">{h.sub_list_two.youthpolicy}</a>
+            <Link href={"/fightagainst"}>
+              <a className="contact__link">{h.sub_list_two.fightagainstcorruption}</a>
             </Link>
           </div>
           <div className="about-wrapper">
             <Sidebar />
             <div className="about-box">
             <h1 className="servise__title">{a.title}</h1>
-
+<h2 className="about__subtitle">{a.subtitle1}</h2>
               <p className="about__text">
                {a.text1}
               </p>
@@ -47,9 +47,13 @@ const About = () => {
               {a.text2}
               </p>
               <br />
+              <h2 className="about__subtitle">{a.subtitle2}</h2>
+
               <p className="about__text">
               {a.text3}
               </p>
+              <br/>
+              <h2 className="about__subtitle">{a.subtitle3}</h2>
              
             </div>
         
