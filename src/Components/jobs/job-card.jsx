@@ -24,7 +24,7 @@ function Accordion(props) {
 </div>
 
 <div className="jobs__title-wrapper">
-<Image src={props.photo} alt="ucell logo"/>
+{/* <Image src={props.photo} alt="ucell logo"/> */}
 <time>{props.time}</time>
 </div>
     </li>

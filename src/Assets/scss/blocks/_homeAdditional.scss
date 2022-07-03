@@ -20,11 +20,12 @@ text-align: center;
    position: relative;
    display: flex;
    align-items: center;  
-   margin: 0;
+   justify-content: center;
+   margin: 0 auto;
    padding: 0;
 }
 .additional__item {
-   width: 435px;
+   width: 330px;
    margin-right: 70px;
 background-size: contain;
    background-repeat: no-repeat;
@@ -40,12 +41,12 @@ background-position: top left;
 }
 .additional__item:nth-child(2) {
    background-image: url('../../images/landslides.png');
-background-position: 0 5px;
+background-position: 0 25px;
 
 }
 .additional__item:nth-child(3) {
    background-image: url('../../images/avalanche.png');
-background-position: 0 29px;
+background-position: 0 39px;
    
 }
 
@@ -56,13 +57,12 @@ background-position: 0 29px;
    align-items: flex-start;
    margin-top: 230px;
    height: 55px;
+text-align: center;
+}
 
-}
-.count {
-   margin-left: 110px;
-}
 .count,
 .discription {
+margin: 0 auto;
    font-size: 24px;
    font-weight: 500;
    line-height: 28px;
