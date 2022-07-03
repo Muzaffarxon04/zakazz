@@ -71,6 +71,7 @@ function Intro({Url}) {
 
 
   const { photogallery: d } = Content[lang];
+  const { header: h} = Content[lang];
 
   // useEffect(() => {
   //     fetch('',)
@@ -101,8 +102,8 @@ function Intro({Url}) {
             >
               <div className="container">
                 <div className="slider__box">
-                  <h2 className="slider__box__title">{e.title}</h2>
-                  <p className="slider__box__subtitle">{e.info.split(" ").slice(0, 20).join(" ") + "..."}</p>
+                  <h2 className="slider__box__title">{h.intro_title}</h2>
+                  <p className="slider__box__subtitle">{h.intro_subtitle.split(" ").slice(0, 20).join(" ") + "..."}</p>
                   <button>
                     <Link href={e.img}>
                       <a>{d.more}</a>
