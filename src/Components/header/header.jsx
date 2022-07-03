@@ -6,6 +6,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/router";
 import Hamburger from "hamburger-react";
 
+import Marquee from "react-fast-marquee";
+
 import Logo from "../../Assets/images/logo.svg";
 import Flag from "../../Assets/images/flag.svg";
 import Arrow from "../../Assets/images/row.svg";
@@ -48,6 +50,11 @@ const Header = () => {
 
   return (
     <>
+    <Marquee speed={65} className="website-test__title"><mark>website is in developing process!!!</mark>
+    <mark>сайт находится в процессе разработки!!!</mark>
+    <mark>veb-sayt ishlab chiqish jarayonida!!!</mark>
+
+    </Marquee>
       <div className="header-wrapper" ref={elNavbar}>
         <div className="container">
       <div className="hamburget-wrapper">

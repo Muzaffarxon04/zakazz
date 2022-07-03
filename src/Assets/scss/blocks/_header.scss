@@ -1,3 +1,24 @@
+header{
+  position: relative;
+  .website-test__title{
+
+    top: 0;
+  // padding:2px 0;
+  margin: 0;
+  font-size: 12px;
+  background-color: yellow;
+  font-weight: bold;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+
+    mark{
+      letter-spacing: 1px;
+      margin-right: 300px;
+    }
+  }
+}
+
 .header {
   height: 220px;
   margin-bottom: 30px;
