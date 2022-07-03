@@ -60,14 +60,15 @@ const About = () => {
                 email={m.card1.email}
                 email2={m.card1.email2}
                 day={m.card1.open_days}
-                text={m.card1.data}
-                text2={m.card1.data2}
-                text3={m.card1.data33}
-                text4={m.card1.data4}
-                text5={m.card1.data5}
-                text6={m.card1.data66}
-                text7={m.card1.data7}
-                text8={m.card1.data8}
+text="Дополняется "
+                // text={m.card1.data}
+                // text2={m.card1.data2}
+                // text3={m.card1.data33}
+                // text4={m.card1.data4}
+                // text5={m.card1.data5}
+                // text6={m.card1.data66}
+                // text7={m.card1.data7}
+                // text8={m.card1.data8}
               />
               <Accordion
                 rank={m.card2.rank}
@@ -78,15 +79,16 @@ const About = () => {
                 email={m.card2.email}
                 email2={m.card2.email2}
                 day={m.card2.open_days}
-                text={m.card2.data}
-                text2={m.card2.data2}
-                text3={m.card2.data33}
-                text4={m.card2.data44 }
-                text5={m.card2.data5}
-                text6={m.card2.data6}
-                text7={m.card2.data7}
+            text="Дополняется"
+                // text={m.card2.data}
+                // text2={m.card2.data2}
+                // text3={m.card2.data33}
+                // text4={m.card2.data44 }
+                // text5={m.card2.data5}
+                // text6={m.card2.data6}
+                // text7={m.card2.data7}
               />
-              <Accordion
+              {/* <Accordion
                 rank={m.card3.rank}
                 name={m.card3.name}
                 img={img3}
@@ -119,7 +121,7 @@ const About = () => {
                 text5={m.card4.data5}
                 text6={m.card4.data6}
                 text7={m.card4.data7}
-              />
+              /> */}
             </ul>
           </div>
         </div>
