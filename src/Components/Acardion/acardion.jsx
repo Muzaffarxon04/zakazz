@@ -62,7 +62,7 @@ function Accordion(props) {
                     {props.text}
                     </p>
                     <h2 className="management__second-block__subtitle">
-                    {m.title}
+                    {/* {m.title} */}
                     </h2>
                     <p className="management__second-block__description">
                     {props.text2}
@@ -74,7 +74,7 @@ function Accordion(props) {
                     <p className="management__second-block__description">{props.text5}
                     </p>
                     <h2 className="management__second-block__subtitle">
-                    {m.title2}
+                    {/* {m.title2} */}
                     </h2>
                     <p className="management__second-block__description">{props.text6}
                     </p>
