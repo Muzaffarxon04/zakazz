@@ -6,6 +6,8 @@ const header = {
    search: "what are you searching ...",
    heading:
       "STATE SERVICE OF THE REPUBLIC OF UZBEKISTAN FOR MONITORING HAZARDOUS GEOLOGICAL PROCESSES",
+      intro_title:"State service for monitoring dangerous geological processes! Preparation for the winter-spring season of 2021",
+      intro_subtitle:`Monitoring of dangerous geological processes of the Republic of Uzbekistan State Service of the President of the Republic of Uzbekistan of February 19, 2007 No. PQ-585 and of the Cabinet of Ministers of November 13, 2017`,
    home: "Home",
    about: "About service",
    news: "News",

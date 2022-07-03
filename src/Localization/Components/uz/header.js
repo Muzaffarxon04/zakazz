@@ -6,6 +6,11 @@ const header = {
    search: "siz nimani izlayapsiz...",
    heading:
       "O‘ZBEKISTON RESPUBLIKASI DAVLAT XIZMATI XAVFLI GEOLOGIK JARAYONLARNI MONITORING UCHUN",
+      intro_title:"Xavfli geologik jarayonlarni davlat xizmati! 2021 yil qish-bahor mavsumiga1 tayyorgarlik",
+      intro_subtitle:"Oʼzbekiston Respublikasi Xavfli geologik jarayonlarni kuzatish Davlat xizmati Oʼzbekiston Respublikasi Prezidentining 2007 yil 19 fevraldagi PQ-585 sonli qarori va Vazirlar Mahkamasining 2017 yil 13 noyabrdag...",
+      
+      
+
    home: "Bosh sahifa",
    about: "Xizmatlar haqida",
    news: "Yangliklar",
