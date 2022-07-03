@@ -407,6 +407,24 @@ input::placeholder {
   
 }
 
+.department-link
+{
+  position: relative;
+
+  &::before{
+    content: ">";
+    color: #242424;
+    top: 12px;
+    font-weight: 300;
+    font-size: 20px;
+    right: 10px;
+    position: absolute;
+&:hover{
+  color: #25689e;
+
+}
+  }
+}
 // .dropdown__item:nth-child(6){
 //   position: relative;
 // //   &::after{

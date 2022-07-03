@@ -246,8 +246,8 @@ const Header = () => {
                         </a>
                       </Link>
                     </li>
-                    <li className="dropdown__item">
-                        <a className="navbar__dropdown-link">
+                    <li className="dropdown__item ">
+                        <a className="navbar__dropdown-link department-link">
                           {h.sub_list_one.department}
                         </a>
                       <ul className="dropdown-item__sub-dropdown">

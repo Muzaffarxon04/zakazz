@@ -13,7 +13,7 @@ const AboutService = () => {
 
   return (
     <>
-      <section className="about__service">
+      <section className="about__service" id="#service">
         <div className="container">
           <h2 className="about__service__heading">{hb.about}</h2>
           <div className="about__service__info">

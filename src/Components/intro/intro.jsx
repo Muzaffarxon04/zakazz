@@ -86,7 +86,7 @@ function Intro({Url}) {
         className="intro__slider"
         spaceBetween={20}
         autoplay={{
-          delay: 2000,
+          delay: 3500,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -105,9 +105,10 @@ function Intro({Url}) {
                   <h2 className="slider__box__title">{h.intro_title}</h2>
                   <p className="slider__box__subtitle">{h.intro_subtitle.split(" ").slice(0, 20).join(" ") + "..."}</p>
                   <button>
-                    <Link href={e.img}>
-                      <a>{d.more}</a>
-                    </Link>
+                    {/* <Link href={e.img}> */}
+                      <a href="#service">{d.more}</a>
+                    {/* </Link> */}
+                 
                   </button>
                 </div>
               </div>
