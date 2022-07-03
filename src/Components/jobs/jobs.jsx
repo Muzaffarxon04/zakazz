@@ -43,8 +43,8 @@ const About = () => {
             
 
 <ul className="jobs__list">
-<Card job={"Менеджер"} status={"full time"} money={"от 5 000 000 – до 20 000 000 сум"} working={"3 года опыта"} adress={"Ташкент, Юнусабадский район"} time={"2 дня назад"}/>
-<Card job={"Менеджер"} status={"part time"} money={"от 5 000 000 – до 20 000 000 сум"} working={"3 года опыта"} adress={"Ташкент, Юнусабадский район"}  time={"2 дня назад"}/>
+<Card job={"Инженер-геолог"} status={"full time"} money={"2 000 000 - 4 000 000"} working={"3 года опыта"} adress={"Ташкент, Юнусабадский район"} time={"2 дня назад"}/>
+<Card job={"Инженер-геолог"} status={"part time"} money={"2 000 000 - 4 000 000"} working={"3 года опыта"} adress={"Ташкент, Юнусабадский район"}  time={"2 дня назад"}/>
 </ul>
 
             </div>

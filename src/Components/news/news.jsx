@@ -167,6 +167,8 @@ function News({Url}) {
         .catch(e => console.log(e))
 }, [])
 
+console.log(data);
+
   useEffect(() => {
     langValue.current();
   }, []);

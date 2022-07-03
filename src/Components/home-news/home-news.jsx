@@ -113,7 +113,7 @@ function HomeNews({Url}) {
 <Link href={"news/" + e.id}>
                 <a>
                   <div>
-                    <Image loader={myLoaders} src={`/uploads/IMG_1656691533762.png`} alt={e.title} width={790} height={500} className="rasm"/>
+                    <Image loader={myLoaders} src={e.main_img} alt={e.title} width={790} height={500} className="rasm"/>
                     
                   </div>
 
@@ -143,7 +143,7 @@ function HomeNews({Url}) {
                       <Link href={"news/" + e.id}>
                         <a>
                           <div className="home__news__news-img" >
-                            <Image loader={myLoaders} src={`/uploads/IMG_1656691533762.png`} alt={e.title} width={120} height={110} className="home__news__news-image"/>
+                            <Image loader={myLoaders} src={e.main_img} alt={e.title} width={120} height={110} className="home__news__news-image"/>
                           </div>
 
                           <div className="home__news__news-item__content">

@@ -1,7 +1,7 @@
 const add__info = {
    title:"2022 YILDA XAVFLI EKZOGEN GEOLOGIK JARAYONLARNING KO'RSATIShLARI.",
-   landslides: "SUFFOZIYONLARNI G'ORLASH",
-   collapses: "KAVIT JARAYONLARI",
+   landslides: "JARAYONLAR",
+   collapses: "TOSH QULADI",
    avalanche: "KO‘CHKISH JARAYONLARI",
    youth_policy:{
       text1:`    Государственная служба Республики Узбекистан по слежению за опасными геологическими процессами регулярно организовывает спортивные мероприятия в целях обеспечения прав и интересов молодых специалистов, защиты от пагубного воздействия, повышения их индивидуальных навыков и привития здорового образа жизни.

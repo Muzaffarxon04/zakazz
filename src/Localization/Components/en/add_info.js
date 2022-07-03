@@ -1,8 +1,8 @@
 const add__info = {
    title:"MANIFESTATIONS OF HAZARDOUS EXOGENOUS GEOLOGICAL PROCESSES IN 2022",
-   landslides: "SUFFOSION CAVELING",
-   collapses: "CAVITY PROCESSES",
-   avalanche: "LANDSLIDE PROCESSES",
+   landslides: "PROCESSES",
+   collapses: " STONE FALLS",
+   avalanche: "ОПОЛЗНЕВЫЕ ПРОЦЕССЫ",
    youth_policy:{
       text1:`    Государственная служба Республики Узбекистан по слежению за опасными геологическими процессами регулярно организовывает спортивные мероприятия в целях обеспечения прав и интересов молодых специалистов, защиты от пагубного воздействия, повышения их индивидуальных навыков и привития здорового образа жизни.
       `,
