@@ -246,6 +246,31 @@ const Header = () => {
                         </a>
                       </Link>
                     </li>
+                    <li className="dropdown__item">
+                      {/* <Link href="/management"> */}
+                        <a className="navbar__dropdown-link department-link">
+                          {h.sub_list_one.finance}
+                        </a>
+
+                      {/* </Link> */}
+                      <ul className="dropdown-item__sub-dropdown header-dropdown">
+    <li className="sidebar-dropdown__item"><Link href="/financial"><a className="sidebar__link">{h.sub_list_one.financial}</a></Link></li>
+    <li className="sidebar-dropdown__item"><Link href="/audit"><a className="sidebar__link">{h.sub_list_one.audit}</a></Link></li>
+    </ul>
+                    </li>
+                    <li className="dropdown__item">
+                      {/* <Link href="/management"> */}
+                        <a className="navbar__dropdown-link department-link">
+                          {h.sub_list_one.structures}
+                        </a>
+                      {/* </Link> */}
+                      <ul className="dropdown-item__sub-dropdown header-dropdown-second">
+                      <li className="sidebar-dropdown__item"><Link href="/information"><a className="sidebar__link">{h.sub_list_one.inform_department}</a></Link></li>
+    <li className="sidebar-dropdown__item"><Link href="/geological"><a className="sidebar__link">{h.sub_list_one.geology}</a></Link></li>
+    <li className="sidebar-dropdown__item"><Link href="/international"><a className="sidebar__link">{h.sub_list_one.relationships}</a></Link></li>
+ 
+    </ul>
+                    </li>
                     <li className="dropdown__item ">
                         <a className="navbar__dropdown-link department-link">
                           {h.sub_list_one.department}

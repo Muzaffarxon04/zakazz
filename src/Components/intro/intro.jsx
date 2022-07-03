@@ -104,12 +104,12 @@ function Intro({Url}) {
                 <div className="slider__box">
                   <h2 className="slider__box__title">{h.intro_title}</h2>
                   <p className="slider__box__subtitle">{h.intro_subtitle.split(" ").slice(0, 20).join(" ") + "..."}</p>
-                  <button>
+                  {/* <button>
                     {/* <Link href={e.img}> */}
-                      <a href="#service">{d.more}</a>
+                      {/* <a href="#service">{d.more}</a> */}
                     {/* </Link> */}
                  
-                  </button>
+                  {/* </button> */}
                 </div>
               </div>
             </SwiperSlide>
